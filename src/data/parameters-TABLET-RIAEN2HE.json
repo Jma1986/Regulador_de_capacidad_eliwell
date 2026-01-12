@@ -1,0 +1,3659 @@
+[
+  {
+    "id": "501-tyPE",
+    "label": "Tipo de instalación",
+    "description": "Define la estructura de la central. 0=Estándar, 1=Descarga común, 2=Chiller (agua)",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Estándar"
+      },
+      {
+        "value": 1,
+        "label": "Descarga común"
+      },
+      {
+        "value": 2,
+        "label": "Chiller"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "502-PC1",
+    "label": "Potencia compresor 1",
+    "description": "Potencia o número de escalones del compresor 1",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "503-PC2",
+    "label": "Potencia compresor 2",
+    "description": "Potencia o número de escalones del compresor 2",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "504-PC3",
+    "label": "Potencia compresor 3",
+    "description": "Potencia o número de escalones del compresor 3",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "505-PC4",
+    "label": "Potencia compresor 4",
+    "description": "Potencia o número de escalones del compresor 4",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "506-PC5",
+    "label": "Potencia compresor 5",
+    "description": "Potencia o número de escalones del compresor 5",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "507-PC6",
+    "label": "Potencia compresor 6",
+    "description": "Potencia o número de escalones del compresor 6",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "508-PC7",
+    "label": "Potencia compresor 7",
+    "description": "Potencia o número de escalones del compresor 7",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "509-PC8",
+    "label": "Potencia compresor 8",
+    "description": "Potencia o número de escalones del compresor 8",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "510-PC9",
+    "label": "Potencia compresor 9",
+    "description": "Potencia o número de escalones del compresor 9",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "511-PC10",
+    "label": "Potencia compresor 10",
+    "description": "Potencia o número de escalones del compresor 10",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "512-PC11",
+    "label": "Potencia compresor 11",
+    "description": "Potencia o número de escalones del compresor 11",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "513-PC12",
+    "label": "Potencia compresor 12",
+    "description": "Potencia o número de escalones del compresor 12",
+    "folder": "quick_start",
+    "type": "integer",
+    "min": 1,
+    "max": 255,
+    "defaultValue": 1,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "514-EAAL",
+    "label": "Habilita relé alarma",
+    "description": "Habilita salida digital alarma acumulativa. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "515-EACI",
+    "label": "Habilita Inverter Comp.",
+    "description": "Salida digital habilitación INVERTER compresor. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "516-EAFI",
+    "label": "Habilita Inverter Vent.",
+    "description": "Salida digital habilitación INVERTER ventiladores. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "517-EACIE",
+    "label": "Entrada error Inv. Comp.",
+    "description": "Entrada digital error INVERTER compresor 1 y 2. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "518-EAFIE",
+    "label": "Entrada error Inv. Vent.",
+    "description": "Entrada digital error INVERTER ventiladores. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "519-EAgA",
+    "label": "Entrada alarma genérica",
+    "description": "Habilita entrada digital alarma genérica. 0=No, 1=Si",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "520-Fnty",
+    "label": "Modo ventiladores",
+    "description": "Configuración de la sección de impulsión (condensador).",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Inverter"
+      },
+      {
+        "value": 2,
+        "label": "Digital (Relé)"
+      },
+      {
+        "value": 3,
+        "label": "Inverter + Backup"
+      },
+      {
+        "value": 4,
+        "label": "Digital + Inverter"
+      },
+      {
+        "value": 5,
+        "label": "Dig + Inv + Backup"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "521-nFn",
+    "label": "Número ventiladores",
+    "description": "Número total de ventiladores en la instalación (1-8).",
+    "folder": "quick_start",
+    "type": "integer",
+    "defaultValue": 3,
+    "min": 1,
+    "max": 8,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "522-CtyP",
+    "label": "Tipo Aspiración C1",
+    "description": "Tipología de la sección de aspiración circuito 1.",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Homogéneo"
+      },
+      {
+        "value": 1,
+        "label": "No Homogéneo"
+      },
+      {
+        "value": 2,
+        "label": "Mixto (Dig+Inv)"
+      },
+      {
+        "value": 3,
+        "label": "Mixto + Backup"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "523-CPnU",
+    "label": "Num. Compresores C1",
+    "description": "Número de compresores en circuito 1 (0-12).",
+    "folder": "quick_start",
+    "type": "integer",
+    "defaultValue": 3,
+    "min": 0,
+    "max": 12,
+    "accessLevel": "installer",
+    "sourcePage": 102
+  },
+  {
+    "id": "524-CtyP2",
+    "label": "Tipo Aspiración C2",
+    "description": "Tipología de la sección de aspiración circuito 2.",
+    "folder": "quick_start",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Homogéneo"
+      },
+      {
+        "value": 1,
+        "label": "No Homogéneo"
+      },
+      {
+        "value": 2,
+        "label": "Mixto (Dig+Inv)"
+      },
+      {
+        "value": 3,
+        "label": "Mixto + Backup"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 103
+  },
+  {
+    "id": "525-CPnU2",
+    "label": "Num. Compresores C2",
+    "description": "Número de compresores en circuito 2 (0-12).",
+    "folder": "quick_start",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 12,
+    "accessLevel": "installer",
+    "sourcePage": 103
+  },
+  {
+    "id": "101-CCFn",
+    "label": "Tipo Control Comp.",
+    "description": "Tipo control compresor. 0=Proporcional, 1=Zona Neutra, 2=PID",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Proporcional"
+      },
+      {
+        "value": 1,
+        "label": "Zona Neutra"
+      },
+      {
+        "value": 2,
+        "label": "PID"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "102-ItEn",
+    "label": "Hab. Control Integral",
+    "description": "Habilitación Control integral. 0=No, 1=Si",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "103-It",
+    "label": "Tiempo Integral",
+    "description": "Tiempo integral para control PID",
+    "folder": "comp_regulation",
+    "type": "float",
+    "defaultValue": 90.0,
+    "min": 0.1,
+    "max": 90.0,
+    "step": 0.1,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "104-PbEn",
+    "label": "Hab. Control Proporcional",
+    "description": "Habilitación Control proporcional. 0=No, 1=Si",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "105-dtEn",
+    "label": "Hab. Control Derivativo",
+    "description": "Habilitación Control derivativo. 0=No, 1=Si",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "106-dt",
+    "label": "Tiempo Derivativo",
+    "description": "Tiempo derivativo para control PID",
+    "folder": "comp_regulation",
+    "type": "float",
+    "defaultValue": 0.1,
+    "min": 0.1,
+    "max": 90.0,
+    "step": 0.1,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "107-dSS",
+    "label": "Modo Set Dinámico",
+    "description": "Modo set dinámico aspiración. 0=set dinámico, 1=set fijo",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Set Dinámico"
+      },
+      {
+        "value": 1,
+        "label": "Set Fijo"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "108-CPP",
+    "label": "Potencia por defecto",
+    "description": "Habilitación por defecto potencia para sonda aspiración en error. 0=No, 1=Si",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "109-PoPr",
+    "label": "Valor potencia defecto",
+    "description": "Valor por defecto potencia para sonda aspiración en error",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 50,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "110-InMode",
+    "label": "Modo Inverter",
+    "description": "Modo inverter. 0=First In Last Out, 1=Estándar",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "First In Last Out"
+      },
+      {
+        "value": 1,
+        "label": "Estándar"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "111-PEn",
+    "label": "Intervenciones presostato",
+    "description": "Número intervenciones presostato para pasar de alarma automática a manual. 0=siempre auto, 33=siempre manual",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 33,
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "112-PEI",
+    "label": "Intervalo cómputo",
+    "description": "Intervalo de tiempo para el cómputo de intervenciones presostato",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 1,
+    "max": 15,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "113-byPS",
+    "label": "Tiempo bypass presostato",
+    "description": "Tiempo bypass intervención del presostato de aspiración para alta y baja presión",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "114-InLFr",
+    "label": "Frec. mínima inverter",
+    "description": "Frecuencia mínima inverter compresor",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 25,
+    "min": 0,
+    "max": 100,
+    "unitType": "Hz",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "115-InMFr",
+    "label": "Frec. máxima inverter",
+    "description": "Frecuencia máxima inverter compresor",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 85,
+    "min": 0,
+    "max": 100,
+    "unitType": "Hz",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "116-InSFr",
+    "label": "Frec. switch-on inverter",
+    "description": "Frecuencia switch-on inverter compresor",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 40,
+    "min": 0,
+    "max": 100,
+    "unitType": "Hz",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "117-InRP",
+    "label": "Potencia nominal inverter",
+    "description": "Potencia nominal inverter a frecuencia de red",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 100,
+    "min": 0,
+    "max": 255,
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "118-PtSE",
+    "label": "Secuencia parcializaciones",
+    "description": "Define el orden de activación/desactivación de los relés asociados a las parcializaciones. 0=desact, 1=shift, 2=act",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Desactivación"
+      },
+      {
+        "value": 1,
+        "label": "Shift"
+      },
+      {
+        "value": 2,
+        "label": "Activación"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "120-nCPC",
+    "label": "Compresor maestro",
+    "description": "Selección compresor maestro: siempre primero en activarse y último en apagarse. 0=deshabilitado",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 12,
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "121-oFon",
+    "label": "Tiempo Comp. OFF-ON",
+    "description": "Tiempo mínimo entre apagado y arranque del mismo compresor",
+    "folder": "comp_safety",
+    "type": "integer",
+    "defaultValue": 5,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "122-donF",
+    "label": "Tiempo Comp. ON-OFF",
+    "description": "Tiempo mínimo de funcionamiento del compresor antes del apagado",
+    "folder": "comp_safety",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "123-onon",
+    "label": "Tiempo Comp. ON-ON",
+    "description": "Tiempo mínimo entre dos encendidos del mismo compresor",
+    "folder": "comp_safety",
+    "type": "integer",
+    "defaultValue": 5,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "124-don",
+    "label": "Tiempo Escalones ON",
+    "description": "Retardo entre llamadas de dos escalones diferentes",
+    "folder": "comp_safety",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "125-doF",
+    "label": "Tiempo Escalones OFF",
+    "description": "Retardo entre apagado de dos escalones diferentes",
+    "folder": "comp_safety",
+    "type": "integer",
+    "defaultValue": 5,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "126-FdLy",
+    "label": "Habilita dOn primer arranque",
+    "description": "Habilita funcionamiento del retardo 124-don también a primera conexión tras equilibrio. 0=No, 1=Si",
+    "folder": "comp_safety",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "127-FdLF",
+    "label": "Habilita dOF primer decremento",
+    "description": "Habilita funcionamiento del retardo 125-doF también a primera desconexión tras equilibrio. 0=No, 1=Si",
+    "folder": "comp_safety",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "128-CRP",
+    "label": "Potencia nominal comp. digitales",
+    "description": "Potencia nominal compresores digitales a frecuencia de red",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 100,
+    "min": 0,
+    "max": 255,
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "129-Inot",
+    "label": "Tiempo máx. INV potencia mín.",
+    "description": "Tiempo máximo funcionamiento INVERTER a potencia mínima",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 999,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "130-InLt",
+    "label": "Tiempo INV mín. a nuevo escalón",
+    "description": "Tiempo entre reducción del INVERTER al mínimo y activación de un nuevo escalón",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "131-InoFon",
+    "label": "Tiempo INV OFF-ON",
+    "description": "Tiempo mínimo entre apagado y posterior encendido del inverter",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "132-Inonon",
+    "label": "Tiempo INV ON-ON",
+    "description": "Tiempo mínimo entre dos encendidos consecutivos del inverter",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "133-InSwt",
+    "label": "Tiempo mín. switch-on INV",
+    "description": "Tiempo mínimo switch-on inverter",
+    "folder": "comp_inverter",
+    "type": "integer",
+    "defaultValue": 10,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "141-LSE",
+    "label": "Setpoint Mínimo Asp.",
+    "description": "Límite inferior absoluto para el setpoint de usuario",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": -55.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "142-HSE",
+    "label": "Setpoint Máximo Asp.",
+    "description": "Límite superior absoluto para el setpoint de usuario",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 0.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "143-SEt",
+    "label": "Setpoint Aspiración",
+    "description": "Punto de consigna de aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 2.0,
+    "minRef": "141-LSE",
+    "maxRef": "142-HSE",
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "user",
+    "sourcePage": 104
+  },
+  {
+    "id": "144-Pbd",
+    "label": "Banda Prop. Asp.",
+    "description": "Banda proporcional aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 6.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "user",
+    "sourcePage": 104
+  },
+  {
+    "id": "145-PbdE",
+    "label": "Banda Prop. Extendida",
+    "description": "Banda proporcional aspiración extendida. Significativo si 101-CCFn=1 (Zona Neutra)",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 10.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "146-dSPo1",
+    "label": "Offset 1 Set Dinámico",
+    "description": "Offset 1 para set dinámico. Valor que se suma al Setpoint cuando economy se activa",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 2.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "147-dSPo2",
+    "label": "Offset 2 Set Dinámico",
+    "description": "Offset 2 para set dinámico. Valor que se suma al Setpoint para días festivos",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 2.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "148-dLAL",
+    "label": "Histéresis alarma mínima",
+    "description": "Histéresis rearme alarma de mínima aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 5.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "149-LAL",
+    "label": "Umbral alarma mínima",
+    "description": "Umbral absoluto o relativo para la Alarma de mínima aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 20.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "150-dHAL",
+    "label": "Histéresis alarma máxima",
+    "description": "Histéresis rearme alarma de máxima aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 5.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "151-HAL",
+    "label": "Umbral alarma máxima",
+    "description": "Umbral absoluto o relativo para Alarma de máxima aspiración",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 20.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "154-InLPt",
+    "label": "Umbral INV potencia mín.",
+    "description": "Umbral funcionamiento INVERTER a potencia mínima",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": -40.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "155-AtdS",
+    "label": "Set temp. ambiente dinámico",
+    "description": "Set temperatura ambiente para set dinámico",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 15.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "temperature",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "156-dAtdS",
+    "label": "Diferencial AtdS",
+    "description": "Diferencial temperatura ambiente para set dinámico",
+    "folder": "comp_thresholds",
+    "type": "float",
+    "defaultValue": 2.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "temperature",
+    "accessLevel": "installer",
+    "sourcePage": 104
+  },
+  {
+    "id": "301-FCFn",
+    "label": "Tipo Control Vent.",
+    "description": "Tipo control ventiladores. 0=Proporcional, 1=Zona Neutra, 2=PID",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Proporcional"
+      },
+      {
+        "value": 1,
+        "label": "Zona Neutra"
+      },
+      {
+        "value": 2,
+        "label": "PID"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "302-FACt",
+    "label": "Modo activación vent.",
+    "description": "Modo activación ventiladores. 0=Independiente, 1=Requiere compresor encendido",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Independiente"
+      },
+      {
+        "value": 1,
+        "label": "Con compresor"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "303-CoIE",
+    "label": "Habilita corte inverter",
+    "description": "Habilita corte inverter ventiladores. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "304-ItEn",
+    "label": "Hab. Control Integral Vent.",
+    "description": "Habilitación Control integral ventiladores. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "305-It",
+    "label": "Tiempo Integral Vent.",
+    "description": "Tiempo integral para control PID ventiladores",
+    "folder": "fans_regulation",
+    "type": "float",
+    "defaultValue": 90.0,
+    "min": 0.1,
+    "max": 900.0,
+    "step": 0.1,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "306-PbEn",
+    "label": "Hab. Control Prop. Vent.",
+    "description": "Habilitación Control proporcional ventiladores. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "307-dtEn",
+    "label": "Hab. Control Deriv. Vent.",
+    "description": "Habilitación Control derivativo ventiladores. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "308-dt",
+    "label": "Tiempo Derivativo Vent.",
+    "description": "Tiempo derivativo para control PID ventiladores",
+    "folder": "fans_regulation",
+    "type": "float",
+    "defaultValue": 0.1,
+    "min": 0.1,
+    "max": 900.0,
+    "step": 0.1,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "309-InLSP",
+    "label": "% velocidad mín. vent.",
+    "description": "Porcentaje velocidad mínima ventiladores inverter",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "310-InMSP",
+    "label": "% velocidad máx. vent.",
+    "description": "Porcentaje velocidad máxima ventiladores inverter",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 100,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "311-InSSP",
+    "label": "% velocidad saturación vent.",
+    "description": "Porcentaje velocidad saturación ventiladores",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 100,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "312-FPP",
+    "label": "Potencia defecto sonda error",
+    "description": "Habilitación por defecto de la potencia para sonda impulsión en error. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "313-FPr",
+    "label": "Valor potencia defecto vent.",
+    "description": "Potencia por defecto para sonda de impulsión en error",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 50,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "314-dSd",
+    "label": "Modo economy impulsión",
+    "description": "Modo función economy impulsión. 0=set dinámico (condensación flotante), 1=set fijo",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Set Dinámico"
+      },
+      {
+        "value": 1,
+        "label": "Set Fijo"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "315-PEn",
+    "label": "Intervenciones presostato imp.",
+    "description": "Número intervenciones presostato impulsión para pasar de alarma automática a manual",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 33,
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "316-PEI",
+    "label": "Intervalo cómputo imp.",
+    "description": "Intervalo de tiempo para el cómputo de intervenciones presostato impulsión",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 1,
+    "max": 15,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "317-byPS",
+    "label": "Tiempo bypass presostato imp.",
+    "description": "Tiempo bypass intervención del presostato de impulsión para alta y baja presión",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "318-HPPE",
+    "label": "Hab. prevención alarma HP",
+    "description": "Habilitación prevención alarma máxima impulsión. 0=No, 1=Si",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "319-HPPP",
+    "label": "% reducción potencia HP",
+    "description": "Porcentaje reducción potencia compresores prevención alarma máxima impulsión",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 30,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "320-HPPd",
+    "label": "Duración máx. prevención HP",
+    "description": "Máxima duración prevención alarma máxima impulsión. 0=deshabilitado",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "321-HPPI",
+    "label": "Intervalo mín. prevenciones HP",
+    "description": "Mínimo intervalo entre prevenciones alarma máxima impulsión",
+    "folder": "fans_regulation",
+    "type": "integer",
+    "defaultValue": 10,
+    "min": 0,
+    "max": 999,
+    "unitType": "hours",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "322-rot",
+    "label": "Lógica activación vent.",
+    "description": "Lógica de activación ventiladores. 0=secuencia fija, 1=rotación por horas funcionamiento",
+    "folder": "fans_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Secuencia fija"
+      },
+      {
+        "value": 1,
+        "label": "Rotación"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "323-CIt",
+    "label": "Tiempo arranque vent.",
+    "description": "Tiempo durante el cual los ventiladores funcionan al 100% al encendido",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 120,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "324-don",
+    "label": "Tiempo escalones ON vent.",
+    "description": "Retardo entre llamadas de dos escalones diferentes ventiladores",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 15,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "325-doF",
+    "label": "Tiempo escalones OFF vent.",
+    "description": "Retardo entre apagado de dos escalones diferentes ventiladores",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 5,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "326-FStt",
+    "label": "Tiempo máx. OFF vent.",
+    "description": "Tiempo máximo inutilización ventiladores",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 999,
+    "unitType": "hours",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "327-SEr",
+    "label": "Límite horario vent.",
+    "description": "Máximo límite horario de utilización ventiladores",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 32000,
+    "min": 0,
+    "max": 32000,
+    "unitType": "hours",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "328-Inot",
+    "label": "Tiempo máx. INV mín. vent.",
+    "description": "Tiempo máximo funcionamiento INVERTER ventiladores a potencia mínima",
+    "folder": "fans_inverter",
+    "type": "integer",
+    "defaultValue": 999,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "329-InPC",
+    "label": "Step inc/dec INV vent.",
+    "description": "Step incremento/decremento potencia INVERTER ventiladores",
+    "folder": "fans_inverter",
+    "type": "integer",
+    "defaultValue": 10,
+    "min": 0,
+    "max": 100,
+    "unitType": "percent",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "330-InoS",
+    "label": "Modo INV potencia mín. vent.",
+    "description": "Modo activación INVERTER a potencia mínima. 0=desactiva tras tiempo, 1=mantiene mínimo",
+    "folder": "fans_inverter",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Desactiva tras tiempo"
+      },
+      {
+        "value": 1,
+        "label": "Mantiene mínimo"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "331-FPkUP",
+    "label": "Tiempo pick-up tras OFF máx.",
+    "description": "Tiempo pick-up ventiladores tras tiempo máximo OFF",
+    "folder": "fans_safety",
+    "type": "integer",
+    "defaultValue": 10,
+    "min": 0,
+    "max": 999,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 107
+  },
+  {
+    "id": "341-LSE",
+    "label": "Setpoint Mínimo Imp.",
+    "description": "Límite inferior absoluto setpoint ventiladores",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 0.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "342-HSE",
+    "label": "Setpoint Máximo Imp.",
+    "description": "Límite superior absoluto setpoint ventiladores",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 45.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "343-SEt",
+    "label": "Setpoint Impulsión",
+    "description": "Setpoint ventiladores (condensación)",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 35.0,
+    "minRef": "341-LSE",
+    "maxRef": "342-HSE",
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "user",
+    "sourcePage": 106
+  },
+  {
+    "id": "344-Pbd",
+    "label": "Banda Prop. Imp.",
+    "description": "Banda proporcional impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 6.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "user",
+    "sourcePage": 106
+  },
+  {
+    "id": "345-Cod1",
+    "label": "Corte delta 1",
+    "description": "Umbral que se suma al Set de impulsión para pasar de ON/OFF a regulación continua",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 1.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "346-Cod2",
+    "label": "Corte delta 2",
+    "description": "Umbral que se suma al Set + Corte delta 1 por el cual inicia el control modulado",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 1.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "347-dHAL",
+    "label": "Histéresis alarma máx. imp.",
+    "description": "Histéresis rearme alarma de máxima impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 5.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "348-HAL",
+    "label": "Umbral alarma máx. imp.",
+    "description": "Umbral absoluto o relativo para la Alarma de máxima impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 20.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "349-dSFo",
+    "label": "Offset economy impulsión",
+    "description": "Offset fijo para función economy en impulsión o límite superior set dinámico",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 2.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "350-HPP1",
+    "label": "Umbral 1 prevención HP",
+    "description": "Umbral 1 absoluto o relativo de prevención alarma de máxima en impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 10.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "351-HPP2",
+    "label": "Umbral 2 prevención HP",
+    "description": "Umbral 2 absoluto o relativo prevención de alarma de máxima en impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 15.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "352-HPPb",
+    "label": "Banda prop. prevención HP",
+    "description": "Banda proporcional prevención alarma de máxima en impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 5.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "353-dLAL",
+    "label": "Histéresis alarma mín. imp.",
+    "description": "Histéresis rearme alarma de mínima impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 5.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "354-LAL",
+    "label": "Umbral alarma mín. imp.",
+    "description": "Umbral absoluto o relativo para Alarma de mínima impulsión",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 20.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "355-InLPt",
+    "label": "Umbral INV mín. vent.",
+    "description": "Umbral funcionamiento INVERTER ventiladores a potencia mínima",
+    "folder": "fans_thresholds",
+    "type": "float",
+    "defaultValue": 30.0,
+    "min": -100.0,
+    "max": 600.0,
+    "step": 0.1,
+    "unitType": "dynamic_pressure",
+    "accessLevel": "installer",
+    "sourcePage": 106
+  },
+  {
+    "id": "542-toUt",
+    "label": "Tiempo Salida Menú",
+    "description": "Tiempo inactividad para volver a pantalla principal",
+    "folder": "display_settings",
+    "type": "integer",
+    "min": 10,
+    "max": 1000,
+    "defaultValue": 300,
+    "unitType": "seconds",
+    "accessLevel": "user",
+    "sourcePage": 110
+  },
+  {
+    "id": "543-rELP",
+    "label": "Presión Relativa",
+    "description": "Permite seleccionar la visualización en presión absoluta o relativa. 0=Absoluta, 1=Relativa",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Absoluta"
+      },
+      {
+        "value": 1,
+        "label": "Relativa"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "544-AbS",
+    "label": "Alarmas absolutas/relativas",
+    "description": "Define si los umbrales de alarma son absolutos o relativos al setpoint. 0=Absoluta, 1=Relativa",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Absoluta"
+      },
+      {
+        "value": 1,
+        "label": "Relativa"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "545-UMMin",
+    "label": "Límite inf. unidad medida",
+    "description": "Límite inferior unidad de medición aspiración. 0=°C, 1=Bar, 2=°F, 3=PSI",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "°C"
+      },
+      {
+        "value": 1,
+        "label": "Bar"
+      },
+      {
+        "value": 2,
+        "label": "°F"
+      },
+      {
+        "value": 3,
+        "label": "PSI"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "546-UMMax",
+    "label": "Límite sup. unidad medida",
+    "description": "Límite superior unidad de medición aspiración. 0=°C, 1=Bar, 2=°F, 3=PSI",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "°C"
+      },
+      {
+        "value": 1,
+        "label": "Bar"
+      },
+      {
+        "value": 2,
+        "label": "°F"
+      },
+      {
+        "value": 3,
+        "label": "PSI"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "547-UMCP",
+    "label": "Unidad Asp.",
+    "description": "Unidad de medida regulación aspiración. 0=°C, 1=Bar, 2=°F, 3=PSI",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "°C"
+      },
+      {
+        "value": 1,
+        "label": "Bar"
+      },
+      {
+        "value": 2,
+        "label": "°F"
+      },
+      {
+        "value": 3,
+        "label": "PSI"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "548-UMFn",
+    "label": "Unidad Imp.",
+    "description": "Unidad de medida regulación impulsión. 0=°C, 1=Bar, 2=°F, 3=PSI",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "°C"
+      },
+      {
+        "value": 1,
+        "label": "Bar"
+      },
+      {
+        "value": 2,
+        "label": "°F"
+      },
+      {
+        "value": 3,
+        "label": "PSI"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 110
+  },
+  {
+    "id": "549-LoCK",
+    "label": "Bloqueo teclado",
+    "description": "Bloquea el teclado deshabilitando modificación de parámetros y sets. 0=No, 1=Si",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "user",
+    "sourcePage": 110
+  },
+  {
+    "id": "550-HKUnL",
+    "label": "Tecla desbloqueo",
+    "description": "Tecla asociada al desbloqueo del teclado. 0=Ninguna, 1=F1, 2=F2 (default), 3=F3, etc.",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Ninguna"
+      },
+      {
+        "value": 1,
+        "label": "F1"
+      },
+      {
+        "value": 2,
+        "label": "F2"
+      },
+      {
+        "value": 3,
+        "label": "F3"
+      },
+      {
+        "value": 4,
+        "label": "UP"
+      },
+      {
+        "value": 5,
+        "label": "DOWN"
+      },
+      {
+        "value": 6,
+        "label": "OK"
+      },
+      {
+        "value": 7,
+        "label": "F1 3seg"
+      },
+      {
+        "value": 8,
+        "label": "F2 3seg"
+      },
+      {
+        "value": 9,
+        "label": "F3 3seg"
+      },
+      {
+        "value": 10,
+        "label": "UP 3seg"
+      },
+      {
+        "value": 11,
+        "label": "DOWN 3seg"
+      },
+      {
+        "value": 12,
+        "label": "OK 3seg"
+      }
+    ],
+    "accessLevel": "user",
+    "sourcePage": 110
+  },
+  {
+    "id": "551-Stty",
+    "label": "Tipo set aspiración",
+    "description": "Habilitación regulación con set central o lateral respecto a la banda. 0=Lateral, 1=Central",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Set Lateral"
+      },
+      {
+        "value": 1,
+        "label": "Set Central"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "552-PoLI",
+    "label": "Política activación comp.",
+    "description": "Política activación compresores. 0=Secuencia fija, 1=Rotación, 2=Saturación 1, 3=Saturación 2",
+    "folder": "comp_regulation",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Secuencia fija"
+      },
+      {
+        "value": 1,
+        "label": "Rotación (equilibrado)"
+      },
+      {
+        "value": 2,
+        "label": "Saturación 1"
+      },
+      {
+        "value": 3,
+        "label": "Saturación 2"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "553-SEr",
+    "label": "Límite horario comp.",
+    "description": "Máximo límite horario utilización compresores",
+    "folder": "comp_regulation",
+    "type": "integer",
+    "defaultValue": 32000,
+    "min": 0,
+    "max": 32000,
+    "unitType": "hours",
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "555-HIEn",
+    "label": "Hab. cronología alarmas",
+    "description": "Habilitación cronología de alarmas. 0=No, 1=Si",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 120
+  },
+  {
+    "id": "556-ESFn",
+    "label": "Modo Energy Saving",
+    "description": "Habilita algoritmos de ahorro energético",
+    "folder": "display_settings",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitada"
+      },
+      {
+        "value": 1,
+        "label": "Eco. Asp. C1"
+      },
+      {
+        "value": 2,
+        "label": "Eco. Asp. C2"
+      },
+      {
+        "value": 3,
+        "label": "Eco. Asp. C1+C2"
+      },
+      {
+        "value": 4,
+        "label": "Eco. Impulsión"
+      },
+      {
+        "value": 5,
+        "label": "Eco. Asp + Imp"
+      }
+    ],
+    "accessLevel": "user",
+    "sourcePage": 110
+  },
+  {
+    "id": "565-odo",
+    "label": "Retardo al encendido",
+    "description": "Tiempo de espera antes de iniciar la regulación tras dar tensión",
+    "folder": "folder_protection",
+    "type": "integer",
+    "min": 0,
+    "max": 999,
+    "defaultValue": 1,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "566-PAo",
+    "label": "Tiempo exclusión alarmas",
+    "description": "Tiempo tras el encendido durante el cual se ignoran alarmas de sonda",
+    "folder": "folder_protection",
+    "type": "integer",
+    "min": 0,
+    "max": 999,
+    "defaultValue": 15,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "567-tAo",
+    "label": "Tiempo bypass alarmas",
+    "description": "Tiempo bypass alarmas mínima y máxima",
+    "folder": "folder_protection",
+    "type": "integer",
+    "min": 0,
+    "max": 999,
+    "defaultValue": 0,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "568-Aro",
+    "label": "Duración silenciamiento",
+    "description": "Duración silenciamiento alarmas",
+    "folder": "folder_protection",
+    "type": "integer",
+    "min": 0,
+    "max": 9999,
+    "defaultValue": 15,
+    "unitType": "minutes",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "569-PrSAE",
+    "label": "Gestión Alarma Presostato Asp.",
+    "description": "Gestión alarma intervención presostato aspiración. 0=Deshab, 1=Warning, 2=Alarma, 3=Alarma+Relé",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "570-PSAE",
+    "label": "Gestión Alarma min/max asp.",
+    "description": "Gestión alarma mínima y máxima en aspiración",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "571-gtSAE",
+    "label": "Gestión Alarma nivel refrig.",
+    "description": "Gestión alarma nivel refrigerante",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "572-gLSAE",
+    "label": "Gestión Alarma pérdida refrig.",
+    "description": "Gestión alarma pérdida refrigerante",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "573-PrdAE",
+    "label": "Gestión Alarma Presostato Imp.",
+    "description": "Gestión alarma intervención presostato impulsión",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "574-PdAE",
+    "label": "Gestión Alarma min/max imp.",
+    "description": "Gestión alarma mínima y máxima en impulsión",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "575-FtAE",
+    "label": "Gestión Alarma térmica vent.",
+    "description": "Gestión alarma térmica ventiladores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "576-FInAE",
+    "label": "Gestión Alarma error INV vent.",
+    "description": "Gestión alarma error inverter ventiladores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "577-SFAE",
+    "label": "Gestión Alarma mant. vent.",
+    "description": "Gestión alarma mantenimiento ventiladores/inverter ventiladores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "578-CSAE",
+    "label": "Gestión Alarma bloqueo comp.",
+    "description": "Gestión alarma bloqueo compresores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "579-CInAE",
+    "label": "Gestión Alarma error INV comp.",
+    "description": "Gestión alarma error inverter compresor",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "580-SCAE",
+    "label": "Gestión Alarma mant. comp.",
+    "description": "Gestión alarma mantenimiento compresores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "581-oLAE",
+    "label": "Gestión Alarma nivel aceite",
+    "description": "Gestión alarma nivel aceite lubricante",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "582-gAAE",
+    "label": "Gestión Alarma genérica",
+    "description": "Gestión alarma genérica",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "583-rtCAE",
+    "label": "Gestión Alarma RTC",
+    "description": "Gestión alarma RTC (reloj)",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "639-tAb",
+    "label": "Índice configuración fábrica",
+    "description": "TAB - Índice de configuración de parámetros configurados en fábrica (solo lectura)",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 1,
+    "min": 0,
+    "max": 32767,
+    "accessLevel": "service",
+    "readOnly": true,
+    "sourcePage": 109
+  },
+  {
+    "id": "640-rtCE",
+    "label": "Habilitación RTC",
+    "description": "Habilitación RTC (reloj tiempo real). 0=No, 1=Si",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "641-FtyP",
+    "label": "Tipo Refrigerante",
+    "description": "Selección de gas para curvas P/T",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 3,
+    "options": [
+      {
+        "value": 0,
+        "label": "R22"
+      },
+      {
+        "value": 1,
+        "label": "R134a"
+      },
+      {
+        "value": 2,
+        "label": "R502"
+      },
+      {
+        "value": 3,
+        "label": "R404A"
+      },
+      {
+        "value": 4,
+        "label": "R407C"
+      },
+      {
+        "value": 5,
+        "label": "R507"
+      },
+      {
+        "value": 6,
+        "label": "R717 (Amoníaco)"
+      },
+      {
+        "value": 7,
+        "label": "R410A"
+      },
+      {
+        "value": 8,
+        "label": "R417a"
+      },
+      {
+        "value": 9,
+        "label": "R744 (CO2)"
+      },
+      {
+        "value": 10,
+        "label": "R407A"
+      },
+      {
+        "value": 11,
+        "label": "R407F"
+      },
+      {
+        "value": 12,
+        "label": "R290 (Propano)"
+      },
+      {
+        "value": 13,
+        "label": "R427"
+      },
+      {
+        "value": 14,
+        "label": "R600A (Isobutano)"
+      },
+      {
+        "value": 15,
+        "label": "R23"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "646-Pb12",
+    "label": "Tipo sonda PB1/2",
+    "description": "Configuración tipo de sonda PB1 y PB2. 0=4-20mA, 1=0-5V, 2=0-10V",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "4-20mA"
+      },
+      {
+        "value": 1,
+        "label": "0-5V"
+      },
+      {
+        "value": 2,
+        "label": "0-10V"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "647-Pb34",
+    "label": "Tipo sonda PB3/4",
+    "description": "Configuración tipo de sonda PB3 y PB4. 0=4-20mA, 1=0-5V, 2=0-10V, 3=Entrada Digital",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "4-20mA"
+      },
+      {
+        "value": 1,
+        "label": "0-5V"
+      },
+      {
+        "value": 2,
+        "label": "0-10V"
+      },
+      {
+        "value": 3,
+        "label": "Entrada Digital"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "648-Pb56",
+    "label": "Tipo sonda PB5/6",
+    "description": "Configuración tipo de sonda temperatura PB5 y PB6",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 4,
+    "options": [
+      {
+        "value": 3,
+        "label": "Entrada Digital"
+      },
+      {
+        "value": 4,
+        "label": "NTC 103 AT"
+      },
+      {
+        "value": 5,
+        "label": "PTC KTY81"
+      },
+      {
+        "value": 6,
+        "label": "NTC NK103 C1R1"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "649-Pb78",
+    "label": "Tipo sonda PB7/8",
+    "description": "Configuración tipo de sonda temperatura PB7 y PB8",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 4,
+    "options": [
+      {
+        "value": 3,
+        "label": "Entrada Digital"
+      },
+      {
+        "value": 4,
+        "label": "NTC 103 AT"
+      },
+      {
+        "value": 5,
+        "label": "PTC KTY81"
+      },
+      {
+        "value": 6,
+        "label": "NTC NK103 C1R1"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "650-HPb1",
+    "label": "Alta precisión PB1",
+    "description": "Alta precisión transductor PB1. 0=No, 1=Si (centésimas bar)",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "651-HPb2",
+    "label": "Alta precisión PB2",
+    "description": "Alta precisión transductor PB2. 0=No, 1=Si (centésimas bar)",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "No"
+      },
+      {
+        "value": 1,
+        "label": "Si"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "652-AoS1",
+    "label": "Tipo salida analógica 1",
+    "description": "Configuración salida analógica 1. 0=Tensión, 1=Corriente",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Tensión"
+      },
+      {
+        "value": 1,
+        "label": "Corriente"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "653-AoS2",
+    "label": "Tipo salida analógica 2",
+    "description": "Configuración salida analógica 2. 0=Tensión, 1=Corriente",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Tensión"
+      },
+      {
+        "value": 1,
+        "label": "Corriente"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "654-AoS3",
+    "label": "Tipo salida analógica 3",
+    "description": "Configuración salida analógica 3 (solo EWCM 9900). 0=Tensión, 1=Corriente",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Tensión"
+      },
+      {
+        "value": 1,
+        "label": "Corriente"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 109
+  },
+  {
+    "id": "698-SUPFr",
+    "label": "Frecuencia de red",
+    "description": "Frecuencia de red eléctrica. 0=50Hz, 1=60Hz",
+    "folder": "config_io",
+    "type": "enum",
+    "defaultValue": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "50Hz"
+      },
+      {
+        "value": 1,
+        "label": "60Hz"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 105
+  },
+  {
+    "id": "701-HPPAE",
+    "label": "Gestión alarma timeout prev. HP",
+    "description": "Gestión alarma tiempo máximo prevención alarma máxima impulsión. 0=Deshab, 1=Solo señalización",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Solo señalización"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "702-CFAE",
+    "label": "Gestión alarma regulador config.",
+    "description": "Gestión regulador alarma configurable",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 1,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "703-COAE",
+    "label": "Gestión alarmas HP/LP/TH/PD",
+    "description": "Gestión alarmas HP/LP/TH/PD compresores",
+    "folder": "folder_protection",
+    "type": "enum",
+    "defaultValue": 2,
+    "options": [
+      {
+        "value": 0,
+        "label": "Deshabilitado"
+      },
+      {
+        "value": 1,
+        "label": "Warning"
+      },
+      {
+        "value": 2,
+        "label": "Alarma"
+      },
+      {
+        "value": 3,
+        "label": "Alarma + Relé"
+      }
+    ],
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "id": "704-gtSd",
+    "label": "Retardo alarma nivel refrig.",
+    "description": "Retardo señalización alarma nivel refrigerante",
+    "folder": "folder_protection",
+    "type": "integer",
+    "defaultValue": 120,
+    "min": 0,
+    "max": 999,
+    "unitType": "seconds",
+    "accessLevel": "installer",
+    "sourcePage": 108
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - SALIDAS DIGITALES OUT1-OUT19 ==="
+  },
+  {
+    "id": "584-H201",
+    "label": "Función OUT1",
+    "description": "Función asignada a la salida digital 1",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 9,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "585-H202",
+    "label": "Función OUT2",
+    "description": "Función asignada a la salida digital 2",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 19,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "586-H203",
+    "label": "Función OUT3",
+    "description": "Función asignada a la salida digital 3",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 20,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "587-H204",
+    "label": "Función OUT4",
+    "description": "Función asignada a la salida digital 4",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 21,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "588-H205",
+    "label": "Función OUT5",
+    "description": "Función asignada a la salida digital 5",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 10,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "589-H206",
+    "label": "Función OUT6",
+    "description": "Función asignada a la salida digital 6",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 11,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "590-H207",
+    "label": "Función OUT7",
+    "description": "Función asignada a la salida digital 7",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 12,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "591-H208",
+    "label": "Función OUT8",
+    "description": "Función asignada a la salida digital 8",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "592-H209",
+    "label": "Función OUT9",
+    "description": "Función asignada a la salida digital 9",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "593-H210",
+    "label": "Función OUT10",
+    "description": "Función asignada a la salida digital 10",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "594-H211",
+    "label": "Función OUT11",
+    "description": "Función asignada a la salida digital 11",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "595-H212",
+    "label": "Función OUT12",
+    "description": "Función asignada a la salida digital 12",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "596-H213",
+    "label": "Función OUT13",
+    "description": "Función asignada a la salida digital 13",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "597-H214",
+    "label": "Función OUT14",
+    "description": "Función asignada a la salida digital 14",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "598-H215",
+    "label": "Función OUT15",
+    "description": "Función asignada a la salida digital 15",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "599-H216",
+    "label": "Función OUT16",
+    "description": "Función asignada a la salida digital 16",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "600-H217",
+    "label": "Función OUT17",
+    "description": "Función asignada a la salida digital 17",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "601-H218",
+    "label": "Función OUT18",
+    "description": "Función asignada a la salida digital 18",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "id": "602-H219",
+    "label": "Función OUT19",
+    "description": "Función asignada a la salida digital 19",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 114
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - ENTRADAS DIGITALES HV DIH1-DIH14 ==="
+  },
+  {
+    "id": "603-H101",
+    "label": "Función DIH1",
+    "description": "Función asignada a la entrada digital HV 1",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -97,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "604-H102",
+    "label": "Función DIH2",
+    "description": "Función asignada a la entrada digital HV 2",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -79,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "605-H103",
+    "label": "Función DIH3",
+    "description": "Función asignada a la entrada digital HV 3",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -80,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "606-H104",
+    "label": "Función DIH4",
+    "description": "Función asignada a la entrada digital HV 4",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -81,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "607-H105",
+    "label": "Función DIH5",
+    "description": "Función asignada a la entrada digital HV 5",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -52,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "608-H106",
+    "label": "Función DIH6",
+    "description": "Función asignada a la entrada digital HV 6",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -53,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "609-H107",
+    "label": "Función DIH7",
+    "description": "Función asignada a la entrada digital HV 7",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -54,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "610-H108",
+    "label": "Función DIH8",
+    "description": "Función asignada a la entrada digital HV 8",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -70,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "611-H109",
+    "label": "Función DIH9",
+    "description": "Función asignada a la entrada digital HV 9",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -71,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "612-H110",
+    "label": "Función DIH10",
+    "description": "Función asignada a la entrada digital HV 10",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": -72,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "613-H111",
+    "label": "Función DIH11",
+    "description": "Función asignada a la entrada digital HV 11",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "614-H112",
+    "label": "Función DIH12",
+    "description": "Función asignada a la entrada digital HV 12",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "615-H113",
+    "label": "Función DIH13",
+    "description": "Función asignada a la entrada digital HV 13",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "616-H114",
+    "label": "Función DIH14",
+    "description": "Función asignada a la entrada digital HV 14",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - ENTRADAS DIGITALES LV DI1-DI6 ==="
+  },
+  {
+    "id": "617-H301",
+    "label": "Función DI1",
+    "description": "Función asignada a la entrada digital LV 1",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "618-H302",
+    "label": "Función DI2",
+    "description": "Función asignada a la entrada digital LV 2",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "619-H303",
+    "label": "Función DI3",
+    "description": "Función asignada a la entrada digital LV 3",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "620-H304",
+    "label": "Función DI4",
+    "description": "Función asignada a la entrada digital LV 4",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "621-H305",
+    "label": "Función DI5",
+    "description": "Función asignada a la entrada digital LV 5",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "id": "622-H306",
+    "label": "Función DI6",
+    "description": "Función asignada a la entrada digital LV 6",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 115
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - ENTRADAS ANALÓGICAS PRESIÓN PB1-PB3 ==="
+  },
+  {
+    "id": "623-H401",
+    "label": "Función PB1",
+    "description": "Función asignada a la entrada analógica de presión 1",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 1,
+    "min": 0,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "id": "624-H402",
+    "label": "Función PB2",
+    "description": "Función asignada a la entrada analógica de presión 2",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 3,
+    "min": 0,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "id": "625-H403",
+    "label": "Función PB3",
+    "description": "Función asignada a la entrada analógica de presión 3",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -100,
+    "max": 100,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - ENTRADAS ANALÓGICAS TEMPERATURA PB5-PB8 ==="
+  },
+  {
+    "id": "627-H405",
+    "label": "Función PB5",
+    "description": "Función asignada a la entrada analógica de temperatura 5",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 1,
+    "min": -107,
+    "max": 107,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "id": "628-H406",
+    "label": "Función PB6",
+    "description": "Función asignada a la entrada analógica de temperatura 6",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 3,
+    "min": -107,
+    "max": 107,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "id": "629-H407",
+    "label": "Función PB7",
+    "description": "Función asignada a la entrada analógica de temperatura 7",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -107,
+    "max": 107,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "id": "630-H408",
+    "label": "Función PB8",
+    "description": "Función asignada a la entrada analógica de temperatura 8",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": -107,
+    "max": 107,
+    "accessLevel": "installer",
+    "sourcePage": 116
+  },
+  {
+    "_comment": "=== CONFIGURACIÓN I/O - SALIDAS ANALÓGICAS AO1-AO2 ==="
+  },
+  {
+    "id": "631-H501",
+    "label": "Función AO1",
+    "description": "Función asignada a la salida analógica 1 (V1/I1)",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 1,
+    "min": 0,
+    "max": 4,
+    "accessLevel": "installer",
+    "sourcePage": 117
+  },
+  {
+    "id": "632-H502",
+    "label": "Función AO2",
+    "description": "Función asignada a la salida analógica 2 (V2/I2)",
+    "folder": "config_io",
+    "type": "integer",
+    "defaultValue": 0,
+    "min": 0,
+    "max": 4,
+    "accessLevel": "installer",
+    "sourcePage": 117
+  }
+]

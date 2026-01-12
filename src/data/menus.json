@@ -1,0 +1,1997 @@
+{
+  "root": "main_menu",
+  "nodes": {
+    "root_home": {
+      "id": "root_home",
+      "label": "HOME",
+      "type": "home_screen",
+      "description": "Pantalla principal con valores en tiempo real"
+    },
+    "main_menu": {
+      "id": "main_menu",
+      "label": "MENÚ PRINCIPAL",
+      "type": "folder",
+      "children": [
+        "menu_functions",
+        "menu_alarms",
+        "menu_parameters",
+        "menu_clock",
+        "menu_service",
+        "menu_diagnostics",
+        "menu_set_banda"
+      ]
+    },
+    "menu_set_banda": {
+      "id": "menu_set_banda",
+      "label": "Set / Banda",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "143-SEt",
+        "144-Pbd",
+        "343-SEt",
+        "344-Pbd"
+      ]
+    },
+    "menu_functions": {
+      "id": "menu_functions",
+      "label": "Funciones",
+      "type": "folder",
+      "children": [
+        "func_onoff",
+        "func_economy",
+        "func_manual_comp",
+        "func_manual_fans",
+        "func_rotation",
+        "func_defrost"
+      ]
+    },
+    "func_onoff": {
+      "id": "func_onoff",
+      "label": "ON/OFF Instalación",
+      "type": "action",
+      "action": "toggle_system",
+      "description": "Encender/Apagar la instalación completa"
+    },
+    "func_economy": {
+      "id": "func_economy",
+      "label": "Economy",
+      "type": "action",
+      "action": "toggle_economy",
+      "description": "Activar/Desactivar modo ahorro"
+    },
+    "func_manual_comp": {
+      "id": "func_manual_comp",
+      "label": "Manual Compresores",
+      "type": "folder",
+      "children": [
+        "manual_comp_1",
+        "manual_comp_2",
+        "manual_comp_3"
+      ]
+    },
+    "manual_comp_1": {
+      "id": "manual_comp_1",
+      "label": "Compresor 1",
+      "type": "action",
+      "action": "manual_compressor",
+      "index": 1
+    },
+    "manual_comp_2": {
+      "id": "manual_comp_2",
+      "label": "Compresor 2",
+      "type": "action",
+      "action": "manual_compressor",
+      "index": 2
+    },
+    "manual_comp_3": {
+      "id": "manual_comp_3",
+      "label": "Compresor 3",
+      "type": "action",
+      "action": "manual_compressor",
+      "index": 3
+    },
+    "func_manual_fans": {
+      "id": "func_manual_fans",
+      "label": "Manual Ventiladores",
+      "type": "folder",
+      "children": [
+        "manual_fan_1",
+        "manual_fan_2",
+        "manual_fan_3"
+      ]
+    },
+    "manual_fan_1": {
+      "id": "manual_fan_1",
+      "label": "Ventilador 1",
+      "type": "action",
+      "action": "manual_fan",
+      "index": 1
+    },
+    "manual_fan_2": {
+      "id": "manual_fan_2",
+      "label": "Ventilador 2",
+      "type": "action",
+      "action": "manual_fan",
+      "index": 2
+    },
+    "manual_fan_3": {
+      "id": "manual_fan_3",
+      "label": "Ventilador 3",
+      "type": "action",
+      "action": "manual_fan",
+      "index": 3
+    },
+    "func_rotation": {
+      "id": "func_rotation",
+      "label": "Rotación",
+      "type": "action",
+      "action": "force_rotation",
+      "description": "Forzar rotación de compresores"
+    },
+    "func_defrost": {
+      "id": "func_defrost",
+      "label": "Desescarche",
+      "type": "action",
+      "action": "force_defrost",
+      "description": "Forzar ciclo de desescarche"
+    },
+    "menu_alarms": {
+      "id": "menu_alarms",
+      "label": "Alarmas",
+      "type": "folder",
+      "children": [
+        "alarms_active",
+        "alarms_history",
+        "alarms_reset"
+      ]
+    },
+    "alarms_active": {
+      "id": "alarms_active",
+      "label": "Alarmas Activas",
+      "type": "alarm_list",
+      "filter": "active",
+      "description": "Lista de alarmas actualmente activas"
+    },
+    "alarms_history": {
+      "id": "alarms_history",
+      "label": "Cronología",
+      "type": "alarm_list",
+      "filter": "history",
+      "description": "Historial de las últimas alarmas"
+    },
+    "alarms_reset": {
+      "id": "alarms_reset",
+      "label": "Reset Alarmas",
+      "type": "action",
+      "action": "reset_alarms",
+      "description": "Rearmar alarmas manuales"
+    },
+    "menu_parameters": {
+      "id": "menu_parameters",
+      "label": "Parámetros",
+      "type": "folder",
+      "children": [
+        "param_user",
+        "param_installer"
+      ]
+    },
+    "param_user": {
+      "id": "param_user",
+      "label": "Usuario",
+      "type": "folder",
+      "requiredAccess": "user",
+      "children": [
+        "folder_comp",
+        "folder_fans",
+        "folder_display"
+      ]
+    },
+    "param_installer": {
+      "id": "param_installer",
+      "label": "Instalador",
+      "type": "folder",
+      "requiredAccess": "installer",
+      "password": "22",
+      "children": [
+        "quick_start",
+        "folder_comp_full",
+        "folder_fans_full",
+        "folder_protection",
+        "folder_config",
+        "folder_resources",
+        "display_settings"
+      ]
+    },
+    "quick_start": {
+      "id": "quick_start",
+      "label": "Encendido Rápido",
+      "type": "custom_quick_start",
+      "children": [
+        "quick_start_params"
+      ]
+    },
+    "quick_start_params": {
+      "id": "quick_start_params",
+      "label": "Parámetros",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "501-tyPE",
+        "502-PC1",
+        "503-PC2",
+        "504-PC3",
+        "505-PC4",
+        "506-PC5",
+        "507-PC6",
+        "508-PC7",
+        "509-PC8",
+        "510-PC9",
+        "511-PC10",
+        "512-PC11",
+        "513-PC12",
+        "514-EAAL",
+        "515-EACI",
+        "516-EAFI",
+        "517-EACIE",
+        "518-EAFIE",
+        "519-EAgA",
+        "520-Fnty",
+        "521-nFn",
+        "522-CtyP",
+        "523-CPnU",
+        "524-CtyP2",
+        "525-CPnU2"
+      ]
+    },
+    "folder_comp": {
+      "id": "folder_comp",
+      "label": "Compresores",
+      "type": "folder",
+      "children": [
+        "comp_thresholds"
+      ]
+    },
+    "folder_comp_full": {
+      "id": "folder_comp_full",
+      "label": "Compresores",
+      "type": "folder",
+      "children": [
+        "comp_thresholds_full",
+        "comp_safety",
+        "comp_regulation",
+        "comp_inverter"
+      ]
+    },
+    "comp_thresholds": {
+      "id": "comp_thresholds",
+      "label": "Umbrales Regulación",
+      "type": "folder",
+      "children": [
+        "143-SEt",
+        "144-Pbd"
+      ]
+    },
+    "comp_thresholds_full": {
+      "id": "comp_thresholds_full",
+      "label": "Umbrales Regulación",
+      "type": "folder",
+      "children": [
+        "141-LSE",
+        "142-HSE",
+        "143-SEt",
+        "144-Pbd",
+        "145-PbdE",
+        "146-dSPo1",
+        "147-dSPo2",
+        "148-dLAL",
+        "149-LAL",
+        "150-dHAL",
+        "151-HAL",
+        "154-InLPt"
+      ]
+    },
+    "comp_safety": {
+      "id": "comp_safety",
+      "label": "Tiempos Seguridad",
+      "type": "folder",
+      "children": [
+        "121-oFon",
+        "122-donF",
+        "123-onon",
+        "124-don",
+        "125-doF",
+        "126-FdLy",
+        "127-FdLF"
+      ]
+    },
+    "comp_regulation": {
+      "id": "comp_regulation",
+      "label": "Regulación/Alarmas",
+      "type": "folder",
+      "children": [
+        "101-CCFn",
+        "102-ItEn",
+        "103-It",
+        "104-PbEn",
+        "105-dtEn",
+        "106-dt",
+        "107-dSS",
+        "108-CPP",
+        "109-PoPr",
+        "110-InMode",
+        "111-PEn",
+        "112-PEI",
+        "113-byPS",
+        "118-PtSE",
+        "120-nCPC",
+        "128-CRP",
+        "551-Stty",
+        "552-PoLI",
+        "553-SEr"
+      ]
+    },
+    "comp_inverter": {
+      "id": "comp_inverter",
+      "label": "Inverter",
+      "type": "folder",
+      "children": [
+        "114-InLFr",
+        "115-InMFr",
+        "116-InSFr",
+        "117-InRP",
+        "129-Inot",
+        "130-InLt",
+        "131-InoFon",
+        "132-Inonon",
+        "133-InSwt"
+      ]
+    },
+    "folder_fans": {
+      "id": "folder_fans",
+      "label": "Ventiladores",
+      "type": "folder",
+      "children": [
+        "fans_thresholds"
+      ]
+    },
+    "folder_fans_full": {
+      "id": "folder_fans_full",
+      "label": "Ventiladores",
+      "type": "folder",
+      "children": [
+        "fans_thresholds_full",
+        "fans_safety",
+        "fans_regulation",
+        "fans_inverter"
+      ]
+    },
+    "fans_thresholds": {
+      "id": "fans_thresholds",
+      "label": "Umbrales Regulación",
+      "type": "folder",
+      "children": [
+        "343-SEt",
+        "344-Pbd"
+      ]
+    },
+    "fans_thresholds_full": {
+      "id": "fans_thresholds_full",
+      "label": "Umbrales Regulación",
+      "type": "folder",
+      "children": [
+        "341-LSE",
+        "342-HSE",
+        "343-SEt",
+        "344-Pbd",
+        "345-Cod1",
+        "346-Cod2",
+        "347-dHAL",
+        "348-HAL",
+        "349-dSFo",
+        "350-HPP1",
+        "351-HPP2",
+        "352-HPPb",
+        "353-dLAL",
+        "354-LAL",
+        "355-InLPt"
+      ]
+    },
+    "fans_safety": {
+      "id": "fans_safety",
+      "label": "Tiempos Seguridad",
+      "type": "folder",
+      "children": [
+        "323-CIt",
+        "324-don",
+        "325-doF",
+        "326-FStt",
+        "327-SEr",
+        "331-FPkUP"
+      ]
+    },
+    "fans_regulation": {
+      "id": "fans_regulation",
+      "label": "Regulación/Alarmas",
+      "type": "folder",
+      "children": [
+        "301-FCFn",
+        "302-FACt",
+        "303-CoIE",
+        "304-ItEn",
+        "305-It",
+        "306-PbEn",
+        "307-dtEn",
+        "308-dt",
+        "309-InLSP",
+        "310-InMSP",
+        "311-InSSP",
+        "312-FPP",
+        "313-FPr",
+        "314-dSd",
+        "315-PEn",
+        "316-PEI",
+        "317-byPS",
+        "318-HPPE",
+        "319-HPPP",
+        "320-HPPd",
+        "321-HPPI",
+        "322-rot"
+      ]
+    },
+    "fans_inverter": {
+      "id": "fans_inverter",
+      "label": "Inverter",
+      "type": "folder",
+      "children": [
+        "328-Inot",
+        "329-InPC",
+        "330-InoS"
+      ]
+    },
+    "folder_protection": {
+      "id": "folder_protection",
+      "label": "Protecciones",
+      "type": "folder",
+      "children": [
+        "565-odo",
+        "566-PAo",
+        "567-tAo",
+        "568-Aro",
+        "569-PrSAE",
+        "570-PSAE",
+        "571-gtSAE",
+        "572-gLSAE",
+        "573-PrdAE",
+        "574-PdAE",
+        "575-FtAE",
+        "576-FInAE",
+        "577-SFAE",
+        "578-CSAE",
+        "579-CInAE",
+        "580-SCAE",
+        "581-oLAE",
+        "582-gAAE",
+        "583-rtCAE",
+        "701-HPPAE",
+        "702-CFAE",
+        "703-COAE",
+        "704-gtSd"
+      ]
+    },
+    "folder_config": {
+      "id": "folder_config",
+      "label": "Configuración",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "639-tAb",
+        "640-rtCE",
+        "641-FtyP",
+        "646-Pb12",
+        "648-Pb56",
+        "649-Pb78",
+        "650-HPb1",
+        "651-HPb2",
+        "652-AoS1",
+        "653-AoS2",
+        "655-CALPb1",
+        "655-CALPb1_PSI",
+        "656-CALPb2",
+        "656-CALPb2_PSI",
+        "659-CALPb5",
+        "659-CALPb5_F",
+        "660-CALPb6",
+        "660-CALPb6_F",
+        "661-CALPb7",
+        "661-CALPb7_F",
+        "662-CALPb8",
+        "662-CALPb8_F",
+        "663-LtPb1",
+        "663-LtPb1_PSI",
+        "664-UtPb1",
+        "664-UtPb1_PSI",
+        "665-LtPb2",
+        "665-LtPb2_PSI",
+        "666-UtPb2",
+        "666-UtPb2_PSI"
+      ]
+    },
+    "config_io": {
+      "id": "config_io",
+      "label": "Configuración I/O",
+      "type": "folder",
+      "children": [
+        "639-tAb",
+        "640-rtCE",
+        "641-FtyP",
+        "652-AoS1",
+        "653-AoS2",
+        "654-AoS3",
+        "698-SUPFr"
+      ]
+    },
+    "config_probes": {
+      "id": "config_probes",
+      "label": "Sondas",
+      "type": "folder",
+      "children": [
+        "646-Pb12",
+        "647-Pb34",
+        "648-Pb56",
+        "649-Pb78",
+        "650-HPb1",
+        "651-HPb2"
+      ]
+    },
+    "folder_display": {
+      "id": "folder_display",
+      "label": "Display",
+      "type": "folder",
+      "children": [
+        "542-toUt",
+        "549-LoCK",
+        "556-ESFn"
+      ]
+    },
+    "display_settings": {
+      "id": "display_settings",
+      "label": "Display",
+      "type": "folder",
+      "children": [
+        "542-toUt",
+        "543-rELP",
+        "544-AbS",
+        "545-UMMin",
+        "546-UMMax",
+        "547-UMCP",
+        "548-UMFn",
+        "549-LoCK",
+        "550-HKUnL",
+        "555-HIEn",
+        "556-ESFn"
+      ]
+    },
+    "menu_clock": {
+      "id": "menu_clock",
+      "label": "Reloj",
+      "type": "folder",
+      "children": [
+        "clock_datetime",
+        "clock_schedules"
+      ]
+    },
+    "clock_datetime": {
+      "id": "clock_datetime",
+      "label": "Fecha/Hora",
+      "type": "datetime_editor",
+      "description": "Configurar fecha y hora del sistema"
+    },
+    "clock_schedules": {
+      "id": "clock_schedules",
+      "label": "Programaciones",
+      "type": "folder",
+      "children": [
+        "schedule_economy",
+        "schedule_onoff"
+      ]
+    },
+    "schedule_economy": {
+      "id": "schedule_economy",
+      "label": "Horario Economy",
+      "type": "schedule_editor",
+      "scheduleType": "economy"
+    },
+    "schedule_onoff": {
+      "id": "schedule_onoff",
+      "label": "Horario ON/OFF",
+      "type": "schedule_editor",
+      "scheduleType": "onoff"
+    },
+    "menu_service": {
+      "id": "menu_service",
+      "label": "Servicio",
+      "type": "folder",
+      "requiredAccess": "service",
+      "password": "601",
+      "children": [
+        "service_hours",
+        "service_counters",
+        "service_copy_card",
+        "service_factory_reset"
+      ]
+    },
+    "service_hours": {
+      "id": "service_hours",
+      "label": "Horas Funcionamiento",
+      "type": "folder",
+      "children": [
+        "hours_comp",
+        "hours_fans"
+      ]
+    },
+    "hours_comp": {
+      "id": "hours_comp",
+      "label": "Compresores",
+      "type": "hours_display",
+      "category": "compressors"
+    },
+    "hours_fans": {
+      "id": "hours_fans",
+      "label": "Ventiladores",
+      "type": "hours_display",
+      "category": "fans"
+    },
+    "service_counters": {
+      "id": "service_counters",
+      "label": "Contadores",
+      "type": "counters_display",
+      "description": "Contadores de arranques y paradas"
+    },
+    "service_copy_card": {
+      "id": "service_copy_card",
+      "label": "Copy Card",
+      "type": "folder",
+      "children": [
+        "copy_card_save",
+        "copy_card_load"
+      ]
+    },
+    "copy_card_save": {
+      "id": "copy_card_save",
+      "label": "Guardar Parámetros",
+      "type": "action",
+      "action": "save_to_card"
+    },
+    "copy_card_load": {
+      "id": "copy_card_load",
+      "label": "Cargar Parámetros",
+      "type": "action",
+      "action": "load_from_card"
+    },
+    "service_factory_reset": {
+      "id": "service_factory_reset",
+      "label": "Reset Fábrica",
+      "type": "action",
+      "action": "factory_reset",
+      "requiresConfirmation": true
+    },
+    "menu_diagnostics": {
+      "id": "menu_diagnostics",
+      "label": "Diagnóstico",
+      "type": "folder",
+      "children": [
+        "diag_probes",
+        "diag_inputs",
+        "diag_outputs",
+        "diag_status"
+      ]
+    },
+    "diag_probes": {
+      "id": "diag_probes",
+      "label": "Sondas",
+      "type": "diagnostics_view",
+      "viewType": "probes",
+      "description": "Valores en tiempo real de las sondas"
+    },
+    "diag_inputs": {
+      "id": "diag_inputs",
+      "label": "Entradas Digitales",
+      "type": "diagnostics_view",
+      "viewType": "digital_inputs",
+      "description": "Estado de las entradas digitales"
+    },
+    "diag_outputs": {
+      "id": "diag_outputs",
+      "label": "Salidas",
+      "type": "diagnostics_view",
+      "viewType": "outputs",
+      "description": "Estado de las salidas digitales y analógicas"
+    },
+    "diag_status": {
+      "id": "diag_status",
+      "label": "Estado Sistema",
+      "type": "diagnostics_view",
+      "viewType": "system_status",
+      "description": "Información general del sistema"
+    },
+    "143-SEt": {
+      "id": "143-SEt",
+      "label": "Setpoint Asp",
+      "type": "parameter_link",
+      "parameterId": "143-SEt"
+    },
+    "144-Pbd": {
+      "id": "144-Pbd",
+      "label": "Banda Asp",
+      "type": "parameter_link",
+      "parameterId": "144-Pbd"
+    },
+    "141-LSE": {
+      "id": "141-LSE",
+      "label": "Min Set Asp",
+      "type": "parameter_link",
+      "parameterId": "141-LSE"
+    },
+    "142-HSE": {
+      "id": "142-HSE",
+      "label": "Max Set Asp",
+      "type": "parameter_link",
+      "parameterId": "142-HSE"
+    },
+    "145-PbdE": {
+      "id": "145-PbdE",
+      "label": "Banda Ext.",
+      "type": "parameter_link",
+      "parameterId": "145-PbdE"
+    },
+    "146-dSPo1": {
+      "id": "146-dSPo1",
+      "label": "Offset 1",
+      "type": "parameter_link",
+      "parameterId": "146-dSPo1"
+    },
+    "147-dSPo2": {
+      "id": "147-dSPo2",
+      "label": "Offset 2",
+      "type": "parameter_link",
+      "parameterId": "147-dSPo2"
+    },
+    "148-dLAL": {
+      "id": "148-dLAL",
+      "label": "Hist. Min",
+      "type": "parameter_link",
+      "parameterId": "148-dLAL"
+    },
+    "149-LAL": {
+      "id": "149-LAL",
+      "label": "Umbral Min",
+      "type": "parameter_link",
+      "parameterId": "149-LAL"
+    },
+    "150-dHAL": {
+      "id": "150-dHAL",
+      "label": "Hist. Max",
+      "type": "parameter_link",
+      "parameterId": "150-dHAL"
+    },
+    "151-HAL": {
+      "id": "151-HAL",
+      "label": "Umbral Max",
+      "type": "parameter_link",
+      "parameterId": "151-HAL"
+    },
+    "154-InLPt": {
+      "id": "154-InLPt",
+      "label": "Umbr INV Min",
+      "type": "parameter_link",
+      "parameterId": "154-InLPt"
+    },
+    "101-CCFn": {
+      "id": "101-CCFn",
+      "label": "Tipo Control",
+      "type": "parameter_link",
+      "parameterId": "101-CCFn"
+    },
+    "102-ItEn": {
+      "id": "102-ItEn",
+      "label": "Hab. Integ.",
+      "type": "parameter_link",
+      "parameterId": "102-ItEn"
+    },
+    "103-It": {
+      "id": "103-It",
+      "label": "T. Integral",
+      "type": "parameter_link",
+      "parameterId": "103-It"
+    },
+    "104-PbEn": {
+      "id": "104-PbEn",
+      "label": "Hab. Prop.",
+      "type": "parameter_link",
+      "parameterId": "104-PbEn"
+    },
+    "105-dtEn": {
+      "id": "105-dtEn",
+      "label": "Hab. Deriv.",
+      "type": "parameter_link",
+      "parameterId": "105-dtEn"
+    },
+    "106-dt": {
+      "id": "106-dt",
+      "label": "T. Derivat.",
+      "type": "parameter_link",
+      "parameterId": "106-dt"
+    },
+    "107-dSS": {
+      "id": "107-dSS",
+      "label": "Modo Set",
+      "type": "parameter_link",
+      "parameterId": "107-dSS"
+    },
+    "108-CPP": {
+      "id": "108-CPP",
+      "label": "Pot. Defecto",
+      "type": "parameter_link",
+      "parameterId": "108-CPP"
+    },
+    "109-PoPr": {
+      "id": "109-PoPr",
+      "label": "Val. Pot. Def.",
+      "type": "parameter_link",
+      "parameterId": "109-PoPr"
+    },
+    "110-InMode": {
+      "id": "110-InMode",
+      "label": "Modo INV",
+      "type": "parameter_link",
+      "parameterId": "110-InMode"
+    },
+    "111-PEn": {
+      "id": "111-PEn",
+      "label": "Interv. Pres.",
+      "type": "parameter_link",
+      "parameterId": "111-PEn"
+    },
+    "112-PEI": {
+      "id": "112-PEI",
+      "label": "Int. Cómputo",
+      "type": "parameter_link",
+      "parameterId": "112-PEI"
+    },
+    "113-byPS": {
+      "id": "113-byPS",
+      "label": "Bypass Pres.",
+      "type": "parameter_link",
+      "parameterId": "113-byPS"
+    },
+    "114-InLFr": {
+      "id": "114-InLFr",
+      "label": "Frec. Mín",
+      "type": "parameter_link",
+      "parameterId": "114-InLFr"
+    },
+    "115-InMFr": {
+      "id": "115-InMFr",
+      "label": "Frec. Máx",
+      "type": "parameter_link",
+      "parameterId": "115-InMFr"
+    },
+    "116-InSFr": {
+      "id": "116-InSFr",
+      "label": "Frec. Switch",
+      "type": "parameter_link",
+      "parameterId": "116-InSFr"
+    },
+    "117-InRP": {
+      "id": "117-InRP",
+      "label": "Pot. Nom. INV",
+      "type": "parameter_link",
+      "parameterId": "117-InRP"
+    },
+    "118-PtSE": {
+      "id": "118-PtSE",
+      "label": "Sec. Parcial.",
+      "type": "parameter_link",
+      "parameterId": "118-PtSE"
+    },
+    "120-nCPC": {
+      "id": "120-nCPC",
+      "label": "Comp. Maestro",
+      "type": "parameter_link",
+      "parameterId": "120-nCPC"
+    },
+    "121-oFon": {
+      "id": "121-oFon",
+      "label": "T. OFF-ON",
+      "type": "parameter_link",
+      "parameterId": "121-oFon"
+    },
+    "122-donF": {
+      "id": "122-donF",
+      "label": "T. ON-OFF",
+      "type": "parameter_link",
+      "parameterId": "122-donF"
+    },
+    "123-onon": {
+      "id": "123-onon",
+      "label": "T. ON-ON",
+      "type": "parameter_link",
+      "parameterId": "123-onon"
+    },
+    "124-don": {
+      "id": "124-don",
+      "label": "T. Esc. ON",
+      "type": "parameter_link",
+      "parameterId": "124-don"
+    },
+    "125-doF": {
+      "id": "125-doF",
+      "label": "T. Esc. OFF",
+      "type": "parameter_link",
+      "parameterId": "125-doF"
+    },
+    "126-FdLy": {
+      "id": "126-FdLy",
+      "label": "Hab. dOn",
+      "type": "parameter_link",
+      "parameterId": "126-FdLy"
+    },
+    "127-FdLF": {
+      "id": "127-FdLF",
+      "label": "Hab. dOF",
+      "type": "parameter_link",
+      "parameterId": "127-FdLF"
+    },
+    "128-CRP": {
+      "id": "128-CRP",
+      "label": "Pot. Nom. Dig",
+      "type": "parameter_link",
+      "parameterId": "128-CRP"
+    },
+    "129-Inot": {
+      "id": "129-Inot",
+      "label": "T. Máx INV Min",
+      "type": "parameter_link",
+      "parameterId": "129-Inot"
+    },
+    "130-InLt": {
+      "id": "130-InLt",
+      "label": "T. INV Esc.",
+      "type": "parameter_link",
+      "parameterId": "130-InLt"
+    },
+    "131-InoFon": {
+      "id": "131-InoFon",
+      "label": "T. INV OFF-ON",
+      "type": "parameter_link",
+      "parameterId": "131-InoFon"
+    },
+    "132-Inonon": {
+      "id": "132-Inonon",
+      "label": "T. INV ON-ON",
+      "type": "parameter_link",
+      "parameterId": "132-Inonon"
+    },
+    "133-InSwt": {
+      "id": "133-InSwt",
+      "label": "T. Switch INV",
+      "type": "parameter_link",
+      "parameterId": "133-InSwt"
+    },
+    "551-Stty": {
+      "id": "551-Stty",
+      "label": "Tipo Set",
+      "type": "parameter_link",
+      "parameterId": "551-Stty"
+    },
+    "552-PoLI": {
+      "id": "552-PoLI",
+      "label": "Política Act.",
+      "type": "parameter_link",
+      "parameterId": "552-PoLI"
+    },
+    "553-SEr": {
+      "id": "553-SEr",
+      "label": "Límite Horas",
+      "type": "parameter_link",
+      "parameterId": "553-SEr"
+    },
+    "343-SEt": {
+      "id": "343-SEt",
+      "label": "Set Impulsión",
+      "type": "parameter_link",
+      "parameterId": "343-SEt"
+    },
+    "344-Pbd": {
+      "id": "344-Pbd",
+      "label": "Banda Imp",
+      "type": "parameter_link",
+      "parameterId": "344-Pbd"
+    },
+    "341-LSE": {
+      "id": "341-LSE",
+      "label": "Min Set Imp",
+      "type": "parameter_link",
+      "parameterId": "341-LSE"
+    },
+    "342-HSE": {
+      "id": "342-HSE",
+      "label": "Max Set Imp",
+      "type": "parameter_link",
+      "parameterId": "342-HSE"
+    },
+    "345-Cod1": {
+      "id": "345-Cod1",
+      "label": "Corte D1",
+      "type": "parameter_link",
+      "parameterId": "345-Cod1"
+    },
+    "346-Cod2": {
+      "id": "346-Cod2",
+      "label": "Corte D2",
+      "type": "parameter_link",
+      "parameterId": "346-Cod2"
+    },
+    "347-dHAL": {
+      "id": "347-dHAL",
+      "label": "Hist. Max Imp",
+      "type": "parameter_link",
+      "parameterId": "347-dHAL"
+    },
+    "348-HAL": {
+      "id": "348-HAL",
+      "label": "Umbral Max Imp",
+      "type": "parameter_link",
+      "parameterId": "348-HAL"
+    },
+    "349-dSFo": {
+      "id": "349-dSFo",
+      "label": "Offset Eco",
+      "type": "parameter_link",
+      "parameterId": "349-dSFo"
+    },
+    "350-HPP1": {
+      "id": "350-HPP1",
+      "label": "Umbral HP1",
+      "type": "parameter_link",
+      "parameterId": "350-HPP1"
+    },
+    "351-HPP2": {
+      "id": "351-HPP2",
+      "label": "Umbral HP2",
+      "type": "parameter_link",
+      "parameterId": "351-HPP2"
+    },
+    "352-HPPb": {
+      "id": "352-HPPb",
+      "label": "Banda HP",
+      "type": "parameter_link",
+      "parameterId": "352-HPPb"
+    },
+    "353-dLAL": {
+      "id": "353-dLAL",
+      "label": "Hist. Min Imp",
+      "type": "parameter_link",
+      "parameterId": "353-dLAL"
+    },
+    "354-LAL": {
+      "id": "354-LAL",
+      "label": "Umbral Min Imp",
+      "type": "parameter_link",
+      "parameterId": "354-LAL"
+    },
+    "355-InLPt": {
+      "id": "355-InLPt",
+      "label": "Umbr INV Min V",
+      "type": "parameter_link",
+      "parameterId": "355-InLPt"
+    },
+    "301-FCFn": {
+      "id": "301-FCFn",
+      "label": "Tipo Control",
+      "type": "parameter_link",
+      "parameterId": "301-FCFn"
+    },
+    "302-FACt": {
+      "id": "302-FACt",
+      "label": "Modo Activ.",
+      "type": "parameter_link",
+      "parameterId": "302-FACt"
+    },
+    "303-CoIE": {
+      "id": "303-CoIE",
+      "label": "Corte INV",
+      "type": "parameter_link",
+      "parameterId": "303-CoIE"
+    },
+    "304-ItEn": {
+      "id": "304-ItEn",
+      "label": "Hab. Integ. V",
+      "type": "parameter_link",
+      "parameterId": "304-ItEn"
+    },
+    "305-It": {
+      "id": "305-It",
+      "label": "T. Integ. V",
+      "type": "parameter_link",
+      "parameterId": "305-It"
+    },
+    "306-PbEn": {
+      "id": "306-PbEn",
+      "label": "Hab. Prop. V",
+      "type": "parameter_link",
+      "parameterId": "306-PbEn"
+    },
+    "307-dtEn": {
+      "id": "307-dtEn",
+      "label": "Hab. Deriv. V",
+      "type": "parameter_link",
+      "parameterId": "307-dtEn"
+    },
+    "308-dt": {
+      "id": "308-dt",
+      "label": "T. Deriv. V",
+      "type": "parameter_link",
+      "parameterId": "308-dt"
+    },
+    "309-InLSP": {
+      "id": "309-InLSP",
+      "label": "% Vel. Mín",
+      "type": "parameter_link",
+      "parameterId": "309-InLSP"
+    },
+    "310-InMSP": {
+      "id": "310-InMSP",
+      "label": "% Vel. Máx",
+      "type": "parameter_link",
+      "parameterId": "310-InMSP"
+    },
+    "311-InSSP": {
+      "id": "311-InSSP",
+      "label": "% Vel. Sat.",
+      "type": "parameter_link",
+      "parameterId": "311-InSSP"
+    },
+    "312-FPP": {
+      "id": "312-FPP",
+      "label": "Pot. Def. V",
+      "type": "parameter_link",
+      "parameterId": "312-FPP"
+    },
+    "313-FPr": {
+      "id": "313-FPr",
+      "label": "Val. Pot. V",
+      "type": "parameter_link",
+      "parameterId": "313-FPr"
+    },
+    "314-dSd": {
+      "id": "314-dSd",
+      "label": "Modo Eco Imp",
+      "type": "parameter_link",
+      "parameterId": "314-dSd"
+    },
+    "315-PEn": {
+      "id": "315-PEn",
+      "label": "Interv. Pres. I",
+      "type": "parameter_link",
+      "parameterId": "315-PEn"
+    },
+    "316-PEI": {
+      "id": "316-PEI",
+      "label": "Int. Cómp. I",
+      "type": "parameter_link",
+      "parameterId": "316-PEI"
+    },
+    "317-byPS": {
+      "id": "317-byPS",
+      "label": "Bypass Pres. I",
+      "type": "parameter_link",
+      "parameterId": "317-byPS"
+    },
+    "318-HPPE": {
+      "id": "318-HPPE",
+      "label": "Hab. Prev. HP",
+      "type": "parameter_link",
+      "parameterId": "318-HPPE"
+    },
+    "319-HPPP": {
+      "id": "319-HPPP",
+      "label": "% Red. HP",
+      "type": "parameter_link",
+      "parameterId": "319-HPPP"
+    },
+    "320-HPPd": {
+      "id": "320-HPPd",
+      "label": "Dur. Prev. HP",
+      "type": "parameter_link",
+      "parameterId": "320-HPPd"
+    },
+    "321-HPPI": {
+      "id": "321-HPPI",
+      "label": "Int. Prev. HP",
+      "type": "parameter_link",
+      "parameterId": "321-HPPI"
+    },
+    "322-rot": {
+      "id": "322-rot",
+      "label": "Rotación V",
+      "type": "parameter_link",
+      "parameterId": "322-rot"
+    },
+    "323-CIt": {
+      "id": "323-CIt",
+      "label": "T. Arranque",
+      "type": "parameter_link",
+      "parameterId": "323-CIt"
+    },
+    "324-don": {
+      "id": "324-don",
+      "label": "T. Esc. ON V",
+      "type": "parameter_link",
+      "parameterId": "324-don"
+    },
+    "325-doF": {
+      "id": "325-doF",
+      "label": "T. Esc. OFF V",
+      "type": "parameter_link",
+      "parameterId": "325-doF"
+    },
+    "326-FStt": {
+      "id": "326-FStt",
+      "label": "T. Máx OFF",
+      "type": "parameter_link",
+      "parameterId": "326-FStt"
+    },
+    "327-SEr": {
+      "id": "327-SEr",
+      "label": "Lím. Horas V",
+      "type": "parameter_link",
+      "parameterId": "327-SEr"
+    },
+    "328-Inot": {
+      "id": "328-Inot",
+      "label": "T. INV Mín V",
+      "type": "parameter_link",
+      "parameterId": "328-Inot"
+    },
+    "329-InPC": {
+      "id": "329-InPC",
+      "label": "Step INV",
+      "type": "parameter_link",
+      "parameterId": "329-InPC"
+    },
+    "330-InoS": {
+      "id": "330-InoS",
+      "label": "Modo INV Mín",
+      "type": "parameter_link",
+      "parameterId": "330-InoS"
+    },
+    "331-FPkUP": {
+      "id": "331-FPkUP",
+      "label": "T. Pick-up",
+      "type": "parameter_link",
+      "parameterId": "331-FPkUP"
+    },
+    "501-tyPE": {
+      "id": "501-tyPE",
+      "label": "Tipo Instal.",
+      "type": "parameter_link",
+      "parameterId": "501-tyPE"
+    },
+    "502-PC1": {
+      "id": "502-PC1",
+      "label": "Pot. Comp 1",
+      "type": "parameter_link",
+      "parameterId": "502-PC1"
+    },
+    "503-PC2": {
+      "id": "503-PC2",
+      "label": "Pot. Comp 2",
+      "type": "parameter_link",
+      "parameterId": "503-PC2"
+    },
+    "504-PC3": {
+      "id": "504-PC3",
+      "label": "Pot. Comp 3",
+      "type": "parameter_link",
+      "parameterId": "504-PC3"
+    },
+    "514-EAAL": {
+      "id": "514-EAAL",
+      "label": "Hab. Relé AL",
+      "type": "parameter_link",
+      "parameterId": "514-EAAL"
+    },
+    "515-EACI": {
+      "id": "515-EACI",
+      "label": "Hab. INV Comp",
+      "type": "parameter_link",
+      "parameterId": "515-EACI"
+    },
+    "516-EAFI": {
+      "id": "516-EAFI",
+      "label": "Hab. INV Vent",
+      "type": "parameter_link",
+      "parameterId": "516-EAFI"
+    },
+    "520-Fnty": {
+      "id": "520-Fnty",
+      "label": "Modo Vent.",
+      "type": "parameter_link",
+      "parameterId": "520-Fnty"
+    },
+    "521-nFn": {
+      "id": "521-nFn",
+      "label": "Num Vent.",
+      "type": "parameter_link",
+      "parameterId": "521-nFn"
+    },
+    "522-CtyP": {
+      "id": "522-CtyP",
+      "label": "Tipo Asp.",
+      "type": "parameter_link",
+      "parameterId": "522-CtyP"
+    },
+    "523-CPnU": {
+      "id": "523-CPnU",
+      "label": "Num Comp.",
+      "type": "parameter_link",
+      "parameterId": "523-CPnU"
+    },
+    "524-CtyP2": {
+      "id": "524-CtyP2",
+      "label": "Tipo Asp. C2",
+      "type": "parameter_link",
+      "parameterId": "524-CtyP2"
+    },
+    "525-CPnU2": {
+      "id": "525-CPnU2",
+      "label": "Num Comp. C2",
+      "type": "parameter_link",
+      "parameterId": "525-CPnU2"
+    },
+    "542-toUt": {
+      "id": "542-toUt",
+      "label": "T. Salida",
+      "type": "parameter_link",
+      "parameterId": "542-toUt"
+    },
+    "543-rELP": {
+      "id": "543-rELP",
+      "label": "Pres. Relat.",
+      "type": "parameter_link",
+      "parameterId": "543-rELP"
+    },
+    "544-AbS": {
+      "id": "544-AbS",
+      "label": "Alarmas Rel.",
+      "type": "parameter_link",
+      "parameterId": "544-AbS"
+    },
+    "545-UMMin": {
+      "id": "545-UMMin",
+      "label": "UM Lím. Inf",
+      "type": "parameter_link",
+      "parameterId": "545-UMMin"
+    },
+    "546-UMMax": {
+      "id": "546-UMMax",
+      "label": "UM Lím. Sup",
+      "type": "parameter_link",
+      "parameterId": "546-UMMax"
+    },
+    "547-UMCP": {
+      "id": "547-UMCP",
+      "label": "Unidad Asp",
+      "type": "parameter_link",
+      "parameterId": "547-UMCP"
+    },
+    "548-UMFn": {
+      "id": "548-UMFn",
+      "label": "Unidad Imp",
+      "type": "parameter_link",
+      "parameterId": "548-UMFn"
+    },
+    "549-LoCK": {
+      "id": "549-LoCK",
+      "label": "Bloq. Tecl.",
+      "type": "parameter_link",
+      "parameterId": "549-LoCK"
+    },
+    "550-HKUnL": {
+      "id": "550-HKUnL",
+      "label": "Tecla Desbl.",
+      "type": "parameter_link",
+      "parameterId": "550-HKUnL"
+    },
+    "555-HIEn": {
+      "id": "555-HIEn",
+      "label": "Cronología AL",
+      "type": "parameter_link",
+      "parameterId": "555-HIEn"
+    },
+    "556-ESFn": {
+      "id": "556-ESFn",
+      "label": "Energy Sav.",
+      "type": "parameter_link",
+      "parameterId": "556-ESFn"
+    },
+    "565-odo": {
+      "id": "565-odo",
+      "label": "Ret. Encend.",
+      "type": "parameter_link",
+      "parameterId": "565-odo"
+    },
+    "566-PAo": {
+      "id": "566-PAo",
+      "label": "Excl. Alarmas",
+      "type": "parameter_link",
+      "parameterId": "566-PAo"
+    },
+    "567-tAo": {
+      "id": "567-tAo",
+      "label": "Bypass AL",
+      "type": "parameter_link",
+      "parameterId": "567-tAo"
+    },
+    "568-Aro": {
+      "id": "568-Aro",
+      "label": "Silenc. AL",
+      "type": "parameter_link",
+      "parameterId": "568-Aro"
+    },
+    "569-PrSAE": {
+      "id": "569-PrSAE",
+      "label": "Gest. Pres. A",
+      "type": "parameter_link",
+      "parameterId": "569-PrSAE"
+    },
+    "570-PSAE": {
+      "id": "570-PSAE",
+      "label": "Gest. Min/Max A",
+      "type": "parameter_link",
+      "parameterId": "570-PSAE"
+    },
+    "571-gtSAE": {
+      "id": "571-gtSAE",
+      "label": "Gest. Nivel R",
+      "type": "parameter_link",
+      "parameterId": "571-gtSAE"
+    },
+    "572-gLSAE": {
+      "id": "572-gLSAE",
+      "label": "Gest. Pérd. R",
+      "type": "parameter_link",
+      "parameterId": "572-gLSAE"
+    },
+    "573-PrdAE": {
+      "id": "573-PrdAE",
+      "label": "Gest. Pres. I",
+      "type": "parameter_link",
+      "parameterId": "573-PrdAE"
+    },
+    "574-PdAE": {
+      "id": "574-PdAE",
+      "label": "Gest. Min/Max I",
+      "type": "parameter_link",
+      "parameterId": "574-PdAE"
+    },
+    "575-FtAE": {
+      "id": "575-FtAE",
+      "label": "Gest. Térm. V",
+      "type": "parameter_link",
+      "parameterId": "575-FtAE"
+    },
+    "576-FInAE": {
+      "id": "576-FInAE",
+      "label": "Gest. Err INV V",
+      "type": "parameter_link",
+      "parameterId": "576-FInAE"
+    },
+    "577-SFAE": {
+      "id": "577-SFAE",
+      "label": "Gest. Mant. V",
+      "type": "parameter_link",
+      "parameterId": "577-SFAE"
+    },
+    "578-CSAE": {
+      "id": "578-CSAE",
+      "label": "Gest. Bloq. C",
+      "type": "parameter_link",
+      "parameterId": "578-CSAE"
+    },
+    "579-CInAE": {
+      "id": "579-CInAE",
+      "label": "Gest. Err INV C",
+      "type": "parameter_link",
+      "parameterId": "579-CInAE"
+    },
+    "580-SCAE": {
+      "id": "580-SCAE",
+      "label": "Gest. Mant. C",
+      "type": "parameter_link",
+      "parameterId": "580-SCAE"
+    },
+    "581-oLAE": {
+      "id": "581-oLAE",
+      "label": "Gest. Aceite",
+      "type": "parameter_link",
+      "parameterId": "581-oLAE"
+    },
+    "582-gAAE": {
+      "id": "582-gAAE",
+      "label": "Gest. AL Gen.",
+      "type": "parameter_link",
+      "parameterId": "582-gAAE"
+    },
+    "583-rtCAE": {
+      "id": "583-rtCAE",
+      "label": "Gest. AL RTC",
+      "type": "parameter_link",
+      "parameterId": "583-rtCAE"
+    },
+    "639-tAb": {
+      "id": "639-tAb",
+      "label": "TAB Config.",
+      "type": "parameter_link",
+      "parameterId": "639-tAb"
+    },
+    "640-rtCE": {
+      "id": "640-rtCE",
+      "label": "Hab. RTC",
+      "type": "parameter_link",
+      "parameterId": "640-rtCE"
+    },
+    "641-FtyP": {
+      "id": "641-FtyP",
+      "label": "Refrigerante",
+      "type": "parameter_link",
+      "parameterId": "641-FtyP"
+    },
+    "646-Pb12": {
+      "id": "646-Pb12",
+      "label": "Tipo PB1/2",
+      "type": "parameter_link",
+      "parameterId": "646-Pb12"
+    },
+    "647-Pb34": {
+      "id": "647-Pb34",
+      "label": "Tipo PB3/4",
+      "type": "parameter_link",
+      "parameterId": "647-Pb34"
+    },
+    "648-Pb56": {
+      "id": "648-Pb56",
+      "label": "Tipo PB5/6",
+      "type": "parameter_link",
+      "parameterId": "648-Pb56"
+    },
+    "649-Pb78": {
+      "id": "649-Pb78",
+      "label": "Tipo PB7/8",
+      "type": "parameter_link",
+      "parameterId": "649-Pb78"
+    },
+    "650-HPb1": {
+      "id": "650-HPb1",
+      "label": "Alta Prec. 1",
+      "type": "parameter_link",
+      "parameterId": "650-HPb1"
+    },
+    "651-HPb2": {
+      "id": "651-HPb2",
+      "label": "Alta Prec. 2",
+      "type": "parameter_link",
+      "parameterId": "651-HPb2"
+    },
+    "652-AoS1": {
+      "id": "652-AoS1",
+      "label": "Salida An. 1",
+      "type": "parameter_link",
+      "parameterId": "652-AoS1"
+    },
+    "653-AoS2": {
+      "id": "653-AoS2",
+      "label": "Salida An. 2",
+      "type": "parameter_link",
+      "parameterId": "653-AoS2"
+    },
+    "654-AoS3": {
+      "id": "654-AoS3",
+      "label": "Salida An. 3",
+      "type": "parameter_link",
+      "parameterId": "654-AoS3"
+    },
+    "698-SUPFr": {
+      "id": "698-SUPFr",
+      "label": "Frec. Red",
+      "type": "parameter_link",
+      "parameterId": "698-SUPFr"
+    },
+    "701-HPPAE": {
+      "id": "701-HPPAE",
+      "label": "Gest. T/O HP",
+      "type": "parameter_link",
+      "parameterId": "701-HPPAE"
+    },
+    "702-CFAE": {
+      "id": "702-CFAE",
+      "label": "Gest. AL CFR",
+      "type": "parameter_link",
+      "parameterId": "702-CFAE"
+    },
+    "703-COAE": {
+      "id": "703-COAE",
+      "label": "Gest. HP/LP/TH",
+      "type": "parameter_link",
+      "parameterId": "703-COAE"
+    },
+    "704-gtSd": {
+      "id": "704-gtSd",
+      "label": "Ret. AL Niv. R",
+      "type": "parameter_link",
+      "parameterId": "704-gtSd"
+    },
+    "505-PC4": {
+      "id": "505-PC4",
+      "label": "Potencia compresor 4",
+      "type": "parameter_link",
+      "parameterId": "505-PC4"
+    },
+    "506-PC5": {
+      "id": "506-PC5",
+      "label": "Potencia compresor 5",
+      "type": "parameter_link",
+      "parameterId": "506-PC5"
+    },
+    "507-PC6": {
+      "id": "507-PC6",
+      "label": "Potencia compresor 6",
+      "type": "parameter_link",
+      "parameterId": "507-PC6"
+    },
+    "508-PC7": {
+      "id": "508-PC7",
+      "label": "Potencia compresor 7",
+      "type": "parameter_link",
+      "parameterId": "508-PC7"
+    },
+    "509-PC8": {
+      "id": "509-PC8",
+      "label": "Potencia compresor 8",
+      "type": "parameter_link",
+      "parameterId": "509-PC8"
+    },
+    "510-PC9": {
+      "id": "510-PC9",
+      "label": "Potencia compresor 9",
+      "type": "parameter_link",
+      "parameterId": "510-PC9"
+    },
+    "511-PC10": {
+      "id": "511-PC10",
+      "label": "Potencia compresor 10",
+      "type": "parameter_link",
+      "parameterId": "511-PC10"
+    },
+    "512-PC11": {
+      "id": "512-PC11",
+      "label": "Potencia compresor 11",
+      "type": "parameter_link",
+      "parameterId": "512-PC11"
+    },
+    "513-PC12": {
+      "id": "513-PC12",
+      "label": "Potencia compresor 12",
+      "type": "parameter_link",
+      "parameterId": "513-PC12"
+    },
+    "517-EACIE": {
+      "id": "517-EACIE",
+      "label": "Entrada error Inv. Comp.",
+      "type": "parameter_link",
+      "parameterId": "517-EACIE"
+    },
+    "518-EAFIE": {
+      "id": "518-EAFIE",
+      "label": "Entrada error Inv. Vent.",
+      "type": "parameter_link",
+      "parameterId": "518-EAFIE"
+    },
+    "655-CALPb1_PSI": {
+      "id": "655-CALPb1_PSI",
+      "label": "Calibración PB1",
+      "type": "parameter_link",
+      "parameterId": "655-CALPb1",
+      "displayUnit": "PSI"
+    },
+    "656-CALPb2_PSI": {
+      "id": "656-CALPb2_PSI",
+      "label": "Calibración PB2",
+      "type": "parameter_link",
+      "parameterId": "656-CALPb2",
+      "displayUnit": "PSI"
+    },
+    "659-CALPb5_F": {
+      "id": "659-CALPb5_F",
+      "label": "Calibración PB5",
+      "type": "parameter_link",
+      "parameterId": "659-CALPb5",
+      "displayUnit": "F"
+    },
+    "660-CALPb6_F": {
+      "id": "660-CALPb6_F",
+      "label": "Calibración PB6",
+      "type": "parameter_link",
+      "parameterId": "660-CALPb6",
+      "displayUnit": "F"
+    },
+    "661-CALPb7_F": {
+      "id": "661-CALPb7_F",
+      "label": "Calibración PB7",
+      "type": "parameter_link",
+      "parameterId": "661-CALPb7",
+      "displayUnit": "F"
+    },
+    "662-CALPb8_F": {
+      "id": "662-CALPb8_F",
+      "label": "Calibración PB8",
+      "type": "parameter_link",
+      "parameterId": "662-CALPb8",
+      "displayUnit": "F"
+    },
+    "663-LtPb1_PSI": {
+      "id": "663-LtPb1_PSI",
+      "label": "Umbral min PB1",
+      "type": "parameter_link",
+      "parameterId": "663-LtPb1",
+      "displayUnit": "PSI"
+    },
+    "664-UtPb1_PSI": {
+      "id": "664-UtPb1_PSI",
+      "label": "Umbral max PB1",
+      "type": "parameter_link",
+      "parameterId": "664-UtPb1",
+      "displayUnit": "PSI"
+    },
+    "665-LtPb2_PSI": {
+      "id": "665-LtPb2_PSI",
+      "label": "Umbral min PB2",
+      "type": "parameter_link",
+      "parameterId": "665-LtPb2",
+      "displayUnit": "PSI"
+    },
+    "666-UtPb2_PSI": {
+      "id": "666-UtPb2_PSI",
+      "label": "Umbral max PB2",
+      "type": "parameter_link",
+      "parameterId": "666-UtPb2",
+      "displayUnit": "PSI"
+    },
+    "519-EAgA": {
+      "id": "519-EAgA",
+      "label": "Entrada alarma genérica",
+      "type": "parameter_link",
+      "parameterId": "519-EAgA"
+    },
+    "584-H201": {
+      "id": "584-H201",
+      "label": "Relé OUT1",
+      "type": "parameter_link",
+      "parameterId": "584-H201"
+    },
+    "585-H202": {
+      "id": "585-H202",
+      "label": "Relé OUT2",
+      "type": "parameter_link",
+      "parameterId": "585-H202"
+    },
+    "586-H203": {
+      "id": "586-H203",
+      "label": "Relé OUT3",
+      "type": "parameter_link",
+      "parameterId": "586-H203"
+    },
+    "587-H204": {
+      "id": "587-H204",
+      "label": "Relé OUT4",
+      "type": "parameter_link",
+      "parameterId": "587-H204"
+    },
+    "588-H205": {
+      "id": "588-H205",
+      "label": "Relé OUT5",
+      "type": "parameter_link",
+      "parameterId": "588-H205"
+    },
+    "589-H206": {
+      "id": "589-H206",
+      "label": "Relé OUT6",
+      "type": "parameter_link",
+      "parameterId": "589-H206"
+    },
+    "590-H207": {
+      "id": "590-H207",
+      "label": "Relé OUT7",
+      "type": "parameter_link",
+      "parameterId": "590-H207"
+    },
+    "603-H101": {
+      "id": "603-H101",
+      "label": "Entrada Digital H101",
+      "type": "parameter_link",
+      "parameterId": "603-H101"
+    },
+    "604-H102": {
+      "id": "604-H102",
+      "label": "Entrada Digital H102",
+      "type": "parameter_link",
+      "parameterId": "604-H102"
+    },
+    "605-H103": {
+      "id": "605-H103",
+      "label": "Entrada Digital H103",
+      "type": "parameter_link",
+      "parameterId": "605-H103"
+    },
+    "606-H104": {
+      "id": "606-H104",
+      "label": "Entrada Digital H104",
+      "type": "parameter_link",
+      "parameterId": "606-H104"
+    },
+    "607-H105": {
+      "id": "607-H105",
+      "label": "Entrada Digital H105",
+      "type": "parameter_link",
+      "parameterId": "607-H105"
+    },
+    "608-H106": {
+      "id": "608-H106",
+      "label": "Entrada Digital H106",
+      "type": "parameter_link",
+      "parameterId": "608-H106"
+    },
+    "623-H401": {
+      "id": "623-H401",
+      "label": "Entrada Analógica PB1",
+      "type": "parameter_link",
+      "parameterId": "623-H401"
+    },
+    "624-H402": {
+      "id": "624-H402",
+      "label": "Entrada Analógica PB2",
+      "type": "parameter_link",
+      "parameterId": "624-H402"
+    },
+    "627-H405": {
+      "id": "627-H405",
+      "label": "Entrada Analógica PB5",
+      "type": "parameter_link",
+      "parameterId": "627-H405"
+    },
+    "628-H406": {
+      "id": "628-H406",
+      "label": "Entrada Analógica PB6",
+      "type": "parameter_link",
+      "parameterId": "628-H406"
+    },
+    "629-H407": {
+      "id": "629-H407",
+      "label": "Entrada Analógica PB7",
+      "type": "parameter_link",
+      "parameterId": "629-H407"
+    },
+    "630-H408": {
+      "id": "630-H408",
+      "label": "Entrada Analógica PB8",
+      "type": "parameter_link",
+      "parameterId": "630-H408"
+    },
+    "631-H501": {
+      "id": "631-H501",
+      "label": "Salida Analógica 1",
+      "type": "parameter_link",
+      "parameterId": "631-H501"
+    },
+    "632-H502": {
+      "id": "632-H502",
+      "label": "Salida Analógica 2",
+      "type": "parameter_link",
+      "parameterId": "632-H502"
+    },
+    "folder_resources": {
+      "id": "folder_resources",
+      "label": "Asignación de recursos",
+      "type": "folder",
+      "children": [
+        "folder_resources_do",
+        "folder_resources_di",
+        "folder_resources_ai",
+        "folder_resources_ao"
+      ]
+    },
+    "folder_resources_do": {
+      "id": "folder_resources_do",
+      "label": "Salidas digitales",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "584-H201",
+        "585-H202",
+        "586-H203",
+        "587-H204",
+        "588-H205",
+        "589-H206",
+        "590-H207"
+      ]
+    },
+    "folder_resources_di": {
+      "id": "folder_resources_di",
+      "label": "Entradas digitales",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "603-H101",
+        "604-H102",
+        "605-H103",
+        "606-H104",
+        "607-H105",
+        "608-H106"
+      ]
+    },
+    "folder_resources_ai": {
+      "id": "folder_resources_ai",
+      "label": "Entradas analógicas",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "623-H401",
+        "624-H402",
+        "627-H405",
+        "628-H406",
+        "629-H407",
+        "630-H408"
+      ]
+    },
+    "folder_resources_ao": {
+      "id": "folder_resources_ao",
+      "label": "Salidas analógicas",
+      "type": "folder",
+      "wizard": true,
+      "children": [
+        "631-H501",
+        "632-H502"
+      ]
+    }
+  },
+  "functionKeys": {
+    "F1": {
+      "default": "toggle_system",
+      "label": "ON/OFF"
+    },
+    "F2": {
+      "default": "show_setpoint_band",
+      "label": "SET/Bd"
+    },
+    "F3": {
+      "default": "show_alarms",
+      "label": "ALARMAS"
+    }
+  },
+  "accessLevels": {
+    "user": {
+      "label": "Usuario",
+      "password": null
+    },
+    "installer": {
+      "label": "Instalador",
+      "password": "22"
+    },
+    "service": {
+      "label": "Servicio",
+      "password": "601"
+    }
+  }
+}

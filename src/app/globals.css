@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root {
+  --lcd-bg: #8899a6;
+  --lcd-bg-alt: #9cb0c2;
+}
