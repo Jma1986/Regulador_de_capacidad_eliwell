@@ -66,8 +66,8 @@ export const getDigitalInputLabel = (configValue: number): string => {
  * getUnitLabel('dynamic_pressure', 3, 1) // Retorna "PSI"
  */
 export const getUnitLabel = (
-  unitType: UnitType | undefined, 
-  umcpValue: number = 1, 
+  unitType: UnitType | undefined,
+  umcpValue: number = 1,
   umfnValue: number = 1
 ): string => {
   if (!unitType || unitType === 'none') return '';
@@ -84,7 +84,7 @@ export const getUnitLabel = (
     if (umcpValue === 3) return 'PSI';
     return 'Bar'; // Fallback por defecto
   }
-  
+
   if (unitType === 'dynamic_temp') {
     // Según Pág 110 del manual:
     // 547-UMCP: 0=°C, 2=°F
@@ -114,12 +114,12 @@ export const pressureToTempSimulation = (pressureBar: number, refrigerantId: num
   // 3 = R404A (Estándar en refrigeración comercial)
   // 9 = CO2 (Alta presión)
   // 1 = R134a (Media temperatura)
-  
+
   let temp = 0;
 
   switch (refrigerantId) {
     case 9: // CO2 (R744) - Curva muy empinada
-      temp = (pressureBar * 2) - 50; 
+      temp = (pressureBar * 2) - 50;
       break;
     case 1: // R134a
       temp = (pressureBar * 8) - 30;
@@ -127,11 +127,38 @@ export const pressureToTempSimulation = (pressureBar: number, refrigerantId: num
     case 3: // R404A (Estándar)
     default:
       // Aprox: 1 bar ~= -40C, 5 bar ~= 0C
-      temp = (pressureBar * 10) - 50; 
+      temp = (pressureBar * 10) - 50;
       break;
   }
 
   return parseFloat(temp.toFixed(1));
+};
+
+/**
+ * Inverso de pressureToTempSimulation.
+ * Convierte Temperatura de Saturación (°C) a Presión (Bar) aproximada.
+ * * @param tempC - Temperatura en °C.
+ * @param refrigerantId - ID del refrigerante.
+ * @returns Presión absoluta aproximada en Bar.
+ */
+export const tempToPressureSimulation = (tempC: number, refrigerantId: number): number => {
+  // Inverso de las fórmulas en pressureToTempSimulation
+  let pressure = 0;
+
+  switch (refrigerantId) {
+    case 9: // CO2 (R744)
+      pressure = (tempC + 50) / 2;
+      break;
+    case 1: // R134a
+      pressure = (tempC + 30) / 8;
+      break;
+    case 3: // R404A
+    default:
+      pressure = (tempC + 50) / 10;
+      break;
+  }
+
+  return Math.max(0, parseFloat(pressure.toFixed(2)));
 };
 
 /**

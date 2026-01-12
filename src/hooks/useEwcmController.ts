@@ -594,6 +594,14 @@ export const useEwcmController = (): EwcmController => {
             ...prev,
             dateTimeFieldIndex: prev.dateTimeFieldIndex < 4 ? prev.dateTimeFieldIndex + 1 : 0
           }));
+        } else if (display.currentMenuId === 'root_home') {
+          // Toggle Unidad HP (548-UMFn): 0=°C <-> 1=Bar
+          setParameters(prev => {
+            // Si está en Bar (1) o PSI (3), pasar a °C (0). Si está en Temp, pasar a Bar (1).
+            const current = prev['548-UMFn'] ?? 1;
+            const next = (current === 1 || current === 3) ? 0 : 1;
+            return { ...prev, '548-UMFn': next };
+          });
         } else if (display.currentMenuId === 'quick_start') {
           // En Quick Start Root
           // RIGHT toggles switches at index 0 and 2
@@ -722,6 +730,14 @@ export const useEwcmController = (): EwcmController => {
             dateTimeTemp: [],
             dateTimeFieldIndex: 0
           }));
+        } else if (display.currentMenuId === 'root_home') {
+          // Toggle Unidad LP (547-UMCP): 0=°C <-> 1=Bar
+          setParameters(prev => {
+            // Si está en Bar (1) o PSI (3), pasar a °C (0). Si está en Temp, pasar a Bar (1).
+            const current = prev['547-UMCP'] ?? 1;
+            const next = (current === 1 || current === 3) ? 0 : 1;
+            return { ...prev, '547-UMCP': next };
+          });
         } else {
           exitMenu();
         }

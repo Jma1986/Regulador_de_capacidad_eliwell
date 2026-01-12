@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuNode, EwcmParameter } from '../types/ewcm';
-import { getUnitLabel } from '../utils/ewcmUtils';
+import { getUnitLabel, pressureToTempSimulation, tempToPressureSimulation } from '../utils/ewcmUtils';
 import paramsDb from '../data/parameters.json';
 import { AlarmSystemState, AlarmSystemControls } from '../hooks/useAlarmSystem';
 import {
@@ -204,24 +204,46 @@ const LcdScreen: React.FC<LcdScreenProps> = ({
             {/* ZONA C: ASPIRACIÓN (LP) */}
             <div className="w-1/2 border-r border-black/10 p-1 flex flex-col justify-center relative">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold tracking-tighter">{suctionP.toFixed(2)}</span>
-                <span className="text-[10px] font-bold">Bar</span>
+                {/* 547-UMCP: 1=Bar (Presión), 0=°C (Temp Saturación) */}
+                <span className="text-3xl font-bold tracking-tighter">
+                  {(parameters['547-UMCP'] === 0)
+                    ? pressureToTempSimulation(suctionP, parameters['641-FtyP'] || 3).toFixed(1)
+                    : suctionP.toFixed(2)}
+                </span>
+                <span className="text-[10px] font-bold">
+                  {(parameters['547-UMCP'] === 0) ? '°C' : 'Bar'}
+                </span>
               </div>
               <div className="flex justify-between items-end w-full px-1 mt-1">
                 <span className="text-xs font-bold">LP</span>
-                <span className="text-xs font-mono">{suctionSet.toFixed(2)}</span>
+                <span className="text-xs font-mono">
+                  {(parameters['547-UMCP'] === 0)
+                    ? pressureToTempSimulation(suctionSet, parameters['641-FtyP'] || 3).toFixed(1)
+                    : suctionSet.toFixed(2)}
+                </span>
               </div>
             </div>
 
             {/* ZONA D: IMPULSIÓN (HP) */}
             <div className="w-1/2 p-1 flex flex-col justify-center relative pl-2">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold tracking-tighter">{dischargeT.toFixed(1)}</span>
-                <span className="text-[10px] font-bold">°C</span>
+                {/* 548-UMFn: 0=°C (Temp real), 1=Bar (Presión Saturación) */}
+                <span className="text-3xl font-bold tracking-tighter">
+                  {(parameters['548-UMFn'] === 1)
+                    ? tempToPressureSimulation(dischargeT, parameters['641-FtyP'] || 3).toFixed(2)
+                    : dischargeT.toFixed(1)}
+                </span>
+                <span className="text-[10px] font-bold">
+                  {(parameters['548-UMFn'] === 1) ? 'Bar' : '°C'}
+                </span>
               </div>
               <div className="flex justify-between items-end w-full px-1 mt-1">
                 <span className="text-xs font-bold">HP</span>
-                <span className="text-xs font-mono">{dischargeSet.toFixed(1)}</span>
+                <span className="text-xs font-mono">
+                  {(parameters['548-UMFn'] === 1)
+                    ? tempToPressureSimulation(dischargeSet, parameters['641-FtyP'] || 3).toFixed(2)
+                    : dischargeSet.toFixed(1)}
+                </span>
               </div>
             </div>
           </div>
