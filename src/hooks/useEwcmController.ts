@@ -10,7 +10,7 @@ import paramsDb from '../data/parameters.json';
 import { MenuStructure, EwcmParameter } from '../types/ewcm';
 
 // Clave para localStorage
-const STORAGE_KEY = 'ewcm_eo_parameters';
+const STORAGE_KEY = 'ewcm_eo_parameters_v2';
 
 // Función para cargar parámetros desde localStorage
 const loadParametersFromStorage = (): Record<string, number> | null => {

@@ -349,8 +349,8 @@ export const useSimulationLoop = (
       }
 
       // 1. Leer Parámetros
-      const setpointAsp = parameters['143-SEt'] ?? -35.0;
-      const bandAsp = parameters['144-Pbd'] ?? 2.0;
+      const setpointAsp = parameters['143-SEt'] ?? 1.5;
+      const bandAsp = parameters['144-Pbd'] ?? 1.0;
       const setpointImp = parameters['343-SEt'] ?? 35.0;
       const bandImp = parameters['344-Pbd'] ?? 5.0;
 
