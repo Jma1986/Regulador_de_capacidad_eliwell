@@ -154,17 +154,17 @@ export const useIOConfiguration = (
     const states: IOState[] = [];
 
     for (let i = 0; i < Math.min(category.maxCount, maxCount); i++) {
+      // Calcular índice físico
+      const physicalOffset = (category as { physicalOffset?: number }).physicalOffset ?? 0;
+      const physicalIndex = physicalOffset + i + 1;
+
       // Generar ID del parámetro
       const paramNum = category.startParam + i;
-      const suffix = String(i + 1).padStart(2, '0');
+      const suffix = String(physicalIndex).padStart(2, '0');
       const paramId = `${paramNum}-${category.paramPrefix}${suffix}`;
 
       // Leer valor del parámetro
       const functionCode = parameters[paramId] ?? 0;
-
-      // Calcular índice físico
-      const physicalOffset = (category as { physicalOffset?: number }).physicalOffset ?? 0;
-      const physicalIndex = physicalOffset + i + 1;
 
       // Resolver etiqueta
       const resolved = resolveLabel(functionCode, category.mappingKey);

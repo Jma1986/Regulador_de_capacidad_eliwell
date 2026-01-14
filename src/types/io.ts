@@ -247,7 +247,8 @@ export const IO_PARAM_CONFIG: Record<string, IOParamCategoryConfig> = {
 export function getParamId(category: keyof typeof IO_PARAM_CONFIG, index: number): string {
   const config = IO_PARAM_CONFIG[category];
   const paramNum = config.startParamNum + index;
-  const suffix = String(index + 1).padStart(2, '0');
+  const physicalIndex = (config.physicalOffset ?? 0) + index + 1;
+  const suffix = String(physicalIndex).padStart(2, '0');
   return `${paramNum}-${config.paramPrefix}${suffix}`;
 }
 

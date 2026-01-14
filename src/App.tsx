@@ -24,7 +24,7 @@ export default function Simulator() {
 
   // Configuración dinámica de I/O basada en parámetros
   // Por defecto usamos modelo 9900 (el más completo)
-  const hardwareModel: HardwareModel = '9900';
+  const hardwareModel: HardwareModel = '8900';
   const ioConfig = useIOConfiguration(parameters, hardwareModel);
 
   // Loop de simulación con I/O dinámica y callbacks de alarma

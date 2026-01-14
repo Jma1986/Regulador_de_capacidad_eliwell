@@ -6,6 +6,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { IOConfigurationResult } from './useIOConfiguration';
+import { pressureToTempSimulation } from '../utils/ewcmUtils';
 
 export interface SimulationState {
   suctionPressure: number; // Bar
@@ -257,7 +258,16 @@ export const useSimulationLoop = (
     if (dischargeTempInput && dischargeTempInput.id === id) {
       physicsRef.current.temp = value;
     }
-  }, []);
+
+    // NUEVO: Si es una entrada de PRESIÓN configurada como impulsión (Transductor de Alta)
+    // Convertimos la presión (Bar) a temperatura saturada (°C) para la simulación interna
+    const dischargePressureInput = ioConfigRef.current.getDischargePressureInput();
+    if (dischargePressureInput && dischargePressureInput.id === id) {
+      // Necesitamos el tipo de gas para convertir
+      const gasType = parameters['641-FtyP'] || 3; // R404A default
+      physicsRef.current.temp = pressureToTempSimulation(value, gasType);
+    }
+  }, [parameters]);
 
   const toggleSystem = useCallback(() => {
     physicsRef.current.systemOn = !physicsRef.current.systemOn;
